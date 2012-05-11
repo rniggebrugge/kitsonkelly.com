@@ -1,0 +1,19 @@
+{
+  "author": "Kitson P. Kelly <dojo@kitsonkelly.com> (http://www.kitsonkelly.com)",
+  "name": "kitsonkelly.com",
+  "description": "My Homepage",
+  "version": "0.1.0",
+  "repository": {
+    "url": ""
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "~0.6.8"
+  },
+  "dependencies": {
+    "express": "~2.5.9",
+    "jade": "~0.20.3"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
