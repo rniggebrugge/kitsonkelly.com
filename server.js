@@ -23,7 +23,7 @@ app.configure(function(){
 });
 
 app.get('/', function(request, response, next){
-	response.render('404.jade', { status: 404, res: request.url });
+	response.render('index.jade');
 })
 
 app.listen(appPort);

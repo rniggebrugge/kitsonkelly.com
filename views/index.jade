@@ -1,0 +1,13 @@
+extends layout
+
+prepend head
+  title = "Hello World"
+
+append scripts
+  script(src='/lib/kitsonkelly/src.js')
+
+block content
+  h1= title
+  #output
+
+block footer
