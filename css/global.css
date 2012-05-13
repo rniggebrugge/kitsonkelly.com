@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: 'Magra';
+    src: url('magra-bold-webfont.eot');
+    src: url('magra-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('magra-bold-webfont.woff') format('woff'),
+         url('magra-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    src: url('oxygen-regular-webfont.eot');
+    src: url('oxygen-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('oxygen-regular-webfont.woff') format('woff'),
+         url('oxygen-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Oxygen', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+  padding: 1em;
+  color: #F3F3F3;
+  background: #4276B6;
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 2px 0 #235796;
+}
+
+header h1{
+  font-family: 'Magra', Arial, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header p{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
