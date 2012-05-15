@@ -7,17 +7,17 @@ prepend head
 append scripts
   script(src='/lib/kitsonkelly/src.js')
 
-append navigation
+prepend navigation
   #dl
     ul
       li
-        a#pdf(href="cv.pdf") PDF
+        a.button#pdf(href="cv.pdf") PDF
       li
-        a#word(href="cv.docx") Word
+        a.button#word(href="cv.docx") Word
       li
-        a#html(href="cv.html") HTML
+        a.button#html(href="cv.html") HTML
       li
-        a#print(href="#") Print
+        a.button#print(href="#") Print
 
 block content
   #cv
@@ -35,7 +35,9 @@ block content
         tr
           td Right to Work
           td
-            | US Citizen, UK Citizen (EU Passport Holder)
+            | US Citizen
+            br
+            | UK Citizen (EU Passport Holder)
         tr
           td Preferred Location
           td Vancouver, BC, Canada

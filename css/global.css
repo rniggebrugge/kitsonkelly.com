@@ -72,7 +72,12 @@ a{
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
-#nav .button{
+#dl{
+  float: right;
+}
+
+#nav .button,
+#dl .button{
   border: 1px solid #dba500;
   border-radius: 3px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -93,29 +98,36 @@ a{
   transition-duration: 0.1s;
 }
 
-#nav .button:hover{
+#nav .button:hover,
+#dl .button:hover{
   background-color: #fa0;
   -moz-transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
 
-#nav ul{
+#nav ul,
+#dl ul{
   list-style: none outside none;
-  margin: 0 0 0 18px;
   padding: 0;
 }
 
-#nav ul li{
+#nav ul{
+  margin: 0 0 0 18px;
+}
+
+#dl ul{
+  margin: 0 18px 0 0;
+}
+
+#nav ul li,
+#dl ul li{
   display: inline;
 }
 
-#nav ul li a{
+#nav ul li a,
+#dl ul li a{
   color: #444;
-}
-
-#dl{
-  display: none;
 }
 
 #wrap_cont {

@@ -2,13 +2,11 @@ extends layout
 
 prepend head
   title = "Kitson P. Kelly"
-  subtitle = "404 - Resource Not Found"
+  subtitle = "500 - Internal Error"
 
 block content
-  #resource The requested resource 
-    code= url
-    | was not found.
-  br
+  h1 Error: #{error.message}
+  pre= error.stack
   hr
   address Powered by 
     a(href="http://nodejs.org/") node.js
