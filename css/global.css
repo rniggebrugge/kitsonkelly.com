@@ -26,6 +26,7 @@ body, html{
 body{
   font-family: 'Oxygen', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-image: url("/images/302.jpg");
+  bachground-color: #c39e67;
 }
 
 #wrap_top{
