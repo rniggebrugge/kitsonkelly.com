@@ -15,22 +15,26 @@ html
         };
       script(src='/lib/dojo/dojo.js')
   body.claro
-    block header
-      header
-        h1= title
-        p= subtitle
-    block navigation
-      #nav
-        ul
-          li 
-            a.button(href="/") home
-          li 
-            a.button(href="/dojo") dojo
-          li 
-            a.button(href="/photos") photos
-          li 
-            a.button(href="/cv") cv/resumé
-          li 
-            a.button(href="//blog.kitsonkelly.com/") blog
-    block content
-    block footer
+    #wrap_top
+      block header
+        #header
+          h1= title
+          p= subtitle
+      block navigation
+        #nav
+          ul
+            li 
+              a.button(href="/") home
+            li 
+              a.button(href="#") dojo
+            li 
+              a.button(href="#") photos
+            li 
+              a.button(href="/cv") cv/résumé
+            li 
+              a.button(href="//blog.kitsonkelly.com/") blog
+    #wrap_cont
+      #section
+        block content
+      #footer
+        block footer

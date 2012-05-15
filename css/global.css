@@ -25,17 +25,26 @@ body, html{
 
 body{
   font-family: 'Oxygen', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-image: url("/images/302.jpg");
 }
 
-header{
+#wrap_top{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+}
+
+#header{
   padding: 1em;
   color: #F3F3F3;
-  background: #4276B6;
+  background: #369;
   box-shadow: 1px 0 2px rgba(0, 0, 0, 0.75);
   text-shadow: 0 2px 0 #235796;
 }
 
-header h1{
+#header h1{
   font-family: 'Magra', Arial, sans-serif;
   font-weight: normal;
   text-align: center;
@@ -44,7 +53,7 @@ header h1{
   font-size: 36px;
 }
 
-header p{
+#header p{
   margin: 0;
   padding: 0;
   text-align: center;
@@ -58,12 +67,13 @@ a{
 #nav{
   margin: 0;
   padding-bottom: 8px;
-  background-color: #FFCC00;
+  background-color: #fc6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
 #nav .button{
-  border: 1px solid #DBA500;
-  border-radius: 2px;
+  border: 1px solid #dba500;
+  border-radius: 3px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 1px rgba(0, 0, 0, 0.1);
   display: inline-block;
   font-weight: bold;
@@ -73,6 +83,20 @@ a{
   line-height: 14px;
   font-size: 14px;
   text-align: center;
+  background-image: -moz-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+  background-image: -webkit-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+  background-image: -o-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+  background-image: -ms-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+  -moz-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+
+#nav .button:hover{
+  background-color: #fa0;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 #nav ul{
@@ -86,5 +110,64 @@ a{
 }
 
 #nav ul li a{
-  color: #555555;
+  color: #444;
+}
+
+#dl{
+  display: none;
+}
+
+#wrap_cont {
+  margin: 185px 0 0 0;
+  padding: 0;
+}
+
+#section {
+  width: 80%;
+  color: #222;
+  margin: 0 auto 30px;
+  background-color: #fff;
+  padding: 50px 50px 40px;
+  border-radius: 4px;
+  border: 1px solid #036;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.7);
+}
+
+#cv {
+  text-align: justify;
+}
+
+#cv h1{
+  font-size: 28px;
+  font-family: 'Magra', Arial, sans-serif;
+  font-weight: normal;
+}
+
+#intro td{
+  vertical-align: top;
+}
+
+#intro .fcol{
+  width: 150px;
+}
+
+.title{
+  font-weight: bold;
+}
+
+.timeframe{
+  text-align: right;
+}
+
+#edu{
+  width: 100%;
+}
+
+#edu .school{
+  font-weight: bold;
+}
+
+#edu .desc{
+  padding-top: 6px;
+  padding-bottom: 6px;
 }

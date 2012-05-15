@@ -24,7 +24,11 @@ app.configure(function(){
 
 app.get('/', function(request, response, next){
 	response.render('index.jade');
-})
+});
+
+app.get('/cv', function(request, response, next){
+  response.render('cv.jade');
+});
 
 app.listen(appPort);
 
