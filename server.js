@@ -60,6 +60,10 @@ app.get('/cv', function(request, response, next){
   response.render('cv');
 });
 
+app.get('/dojo', function(request, response, next){
+  response.render('dojo');
+});
+
 app.get('/404', function(request, response, next){
   next();
 });

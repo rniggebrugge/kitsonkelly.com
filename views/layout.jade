@@ -34,15 +34,15 @@ html
         #nav
           ul
             li 
-              a.button(href="/") home
+              a.button(href="/", rel="section") home
             li 
-              a.button(href="#") dojo
+              a.button(href="/dojo", rel="section", title="Dojo Toolkit Stuff") dojo
             li 
-              a.button(href="#") photos
+              a.button(href="#", rel="section", title="Photobug Me") photos
             li 
-              a.button(href="/cv") cv/résumé
+              a.button(href="/cv", rel="section", title="Hire Me") cv/résumé
             li 
-              a.button(href="//blog.kitsonkelly.com/") blog
+              a.button(href="//blog.kitsonkelly.com/", target="_blank", title="Seven Foot Tall Cactus") blog
     #wrap_cont
       #section
         block content
