@@ -82,9 +82,7 @@ a{
 
 #nav .button,
 #dl .button{
-  border: 1px solid #dba500;
-  border-radius: 3px;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #fc6;
   display: inline-block;
   font-weight: bold;
   padding: 10px 12px;
@@ -93,31 +91,21 @@ a{
   line-height: 14px;
   font-size: 14px;
   text-align: center;
-  background-image: -moz-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
-  background-image: -webkit-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
-  background-image: -o-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
-  background-image: -ms-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
-  -moz-transition-duration: 0.1s;
-  -webkit-transition-duration: 0.1s;
-  transition-duration: 0.1s;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 #contact{
   text-align: center;
-  margin-left: 35px;
-  margin-right: 35px;
-  padding: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 6px 6px 6px;
   border: 1px solid #ccc;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
   border-radius: 3px;
   background-image: url("/images/420.gif");
   background-color: #82bfe2;
-}
-
-#contact span{
-  color: #286588;
-  font-size: 24px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 #contact ul li a{
@@ -153,7 +141,15 @@ a{
 
 #nav .button:hover,
 #dl .button:hover{
+  border: 1px solid #dba500;
   background-color: #fa0;
+  border-radius: 3px;
+  padding: 10px 12px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-image: -moz-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+  background-image: -webkit-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+  background-image: -o-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+  background-image: -ms-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
   -moz-transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -189,12 +185,12 @@ a{
   color: #444;
 }
 
-#wrap_cont {
+#wrap_cont{
   margin: 185px 0 0 0;
   padding: 0;
 }
 
-#section {
+#section{
   width: 80%;
   color: #222;
   margin: 0 auto 30px;
@@ -203,6 +199,11 @@ a{
   border-radius: 4px;
   border: 1px solid #036;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.7);
+}
+
+#section h2{
+	font-family: 'Magra', Arial, sans-serif;
+	font-weight: normal;
 }
 
 #cv {
@@ -242,4 +243,31 @@ a{
 #edu .desc{
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+#whatiddo table{
+	margin: 24px auto;
+	background-color: #000;
+	color: #fff;
+	width: 95%;
+	border-radius: 2px;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.7);
+}
+
+#whatiddo th{
+	font-size: 46px;
+	font-family: 'Magra', Arial, sans-serif;
+	font-weight: normal;
+	padding: 6px;
+}
+
+#whatiddo td{
+	text-align: center;
+	font-size: 22px;
+	padding: 6px;
+}
+
+#comparison{
+	margin-left: auto;
+	margin-right: auto;
 }
