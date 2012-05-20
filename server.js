@@ -20,6 +20,7 @@ NotFound.prototype.__proto__ = Error.prototype;
 app.configure(function(){
 	app.set('view options', { layout: false });
 	app.set('view engine', 'jade');
+	app.use(express.favicon('./images/favicon.ico'));
 	app.use(express.cookieParser());
 	app.use(express.session({ secret: 'yHCoyEPZ9WsNDORGb9SDDMNn0OOMcCgQiW5q8VFhDHJiztvvVVCPkZQWUAXl' }));
 	app.use(app.router);
