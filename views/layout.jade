@@ -6,9 +6,10 @@ html
       title= title
 
     block css
-      style(type='text/css')
+      style(type='text/css', media="all")
         @import '/lib/dijit/themes/claro/claro.css';
         @import '/css/global.css';
+      link(rel="stylesheet", type='text/css', href='/css/print.css', media='print')
     block scripts
       script(type="text/javascript")
         dojoConfig = {

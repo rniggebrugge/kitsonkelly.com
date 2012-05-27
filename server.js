@@ -31,6 +31,7 @@ app.configure(function(){
 	app.use('/lib', express.static('./lib'));
 	app.use('/css', express.static('./css'));
 	app.use('/images', express.static('./images'));
+	app.use('/static', express.static('./static'));
 	
 	app.use(function(request, response, next){
 	  if(request.accepts('html')){
