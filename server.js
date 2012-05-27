@@ -49,8 +49,8 @@ app.configure(function(){
 	});
 	
 	app.use(function(error, request, response, next){
-	  response.status(error.status || 500);
-	  response.render('500', { error: error });
+		response.status(error.status || 500);
+		response.render('500', { error: error });
 	});
 });
 
@@ -59,11 +59,15 @@ app.get('/', function(request, response, next){
 });
 
 app.get('/cv', function(request, response, next){
-  response.render('cv');
+	response.render('cv');
 });
 
 app.get('/dojo', function(request, response, next){
-  response.render('dojo');
+	response.render('dojo');
+});
+
+app.get('/views/:view', function(request, response, next){
+	response.render(request.params.view);
 });
 
 app.get('/404', function(request, response, next){
