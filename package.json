@@ -13,7 +13,8 @@
   "dependencies": {
     "express": "~2.5.11",
     "jade": "~0.26.3",
-    "stylus": "~0.28.0"
+    "stylus": "~0.28.0",
+    "xml2js": "~0.1.14"
   },
   "devDependencies": {},
   "optionalDependencies": {}
