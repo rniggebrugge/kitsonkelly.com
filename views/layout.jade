@@ -13,10 +13,10 @@ html
     block scripts
       script(type="text/javascript")
         dojoConfig = {
-          async: true
+          async: true,
+          deps: ["kitsonkelly/src"]
         };
       script(type="text/javascript", src='/lib/dojo/dojo.js')
-      script(type="text/javascript", src='/lib/kitsonkelly/src.js')
 
     script(type="text/javascript")
       var _gaq = _gaq || [];
@@ -39,13 +39,13 @@ html
         #nav
           ul
             li 
-              a.button(href="/", rel="section") home
+              a.button(href="/", id="navhome", rel="section") home
             li 
-              a.button(href="/dojo", rel="section", title="Dojo Toolkit Stuff") dojo
+              a.button(href="/dojo", id="navdojo", rel="section", title="Dojo Toolkit Stuff") dojo
             li 
               a.button(href="#", rel="section", title="Photobug Me") photos
             li 
-              a.button(href="/cv", rel="section", title="Hire Me") cv/résumé
+              a.button(href="/cv", id="navcv", rel="section", title="Hire Me") cv/résumé
             li 
               a.button(href="//blog.kitsonkelly.com/", target="_blank", title="Seven Foot Tall Cactus") blog
     #wrap_cont

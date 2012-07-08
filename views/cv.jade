@@ -5,14 +5,7 @@ prepend head
   subtitle = "curriculum vitae/résumé"
 
 prepend navigation
-  #dl
-    ul
-      li
-        a.button#pdf(href="/static/KPK_cv_resume.pdf") PDF
-      li
-        a.button#word(href="/static/KPK_cv_resume.docx") Word
-      li
-        a.button#print(href="javascript:window.print()") Print
+  include content/cv_nav
 
 block content
   include content/cv
