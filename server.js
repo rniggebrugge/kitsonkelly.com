@@ -9,7 +9,7 @@ var initModule = "kitsonkelly/server/main";
 // Dojo Configuration
 dojoConfig = {
 	async: true,
-	baseUrl: "lib/",
+	baseUrl: "src/",
 	packages: [{
 		name: "dojo",
 		location: "dojo"
@@ -27,4 +27,4 @@ dojoConfig = {
 }
 
 // Load dojo/dojo
-require("./lib/dojo/dojo.js");
+require("./src/dojo/dojo.js");
