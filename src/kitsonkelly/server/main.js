@@ -25,13 +25,13 @@ require([
 		app.use(express.session({ secret: 'yHCoyEPZ9WsNDORGb9SDDMNn0OOMcCgQiW5q8VFhDHJiztvvVVCPkZQWUAXl' }));
 		app.use(app.router);
 		
-		app.use('/lib/dojo', express.static('../dojo'));
-		app.use('/lib/dijit', express.static('../dijit'));
-		app.use('/lib/dojox', express.static('../dojox'));
-		app.use('/lib', express.static('./lib'));
-		app.use('/css', express.static('./css'));
-		app.use('/images', express.static('./images'));
-		app.use('/static', express.static('./static'));
+		app.use("/lib/dojo", express["static"]("../../lib/dojo"));
+		app.use("/lib/dijit", express["static"]("../../lib/dijit"));
+		app.use("/lib/dojox", express["static"]("../../lib/dojox"));
+		app.use("/lib", express["static"]("./lib"));
+		app.use("/css", express["static"]("./css"));
+		app.use("/images", express["static"]("./images"));
+		app.use("/static", express["static"]("./static"));
 		
 		app.use(function(request, response, next){
 			if(request.accepts('html')){

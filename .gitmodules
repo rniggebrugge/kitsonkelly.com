@@ -7,3 +7,6 @@
 [submodule "lib/dojox"]
 	path = src/dojox
 	url = git://github.com/dojo/dojox.git
+[submodule "src/util"]
+	path = src/util
+	url = git://github.com/dojo/util.git
