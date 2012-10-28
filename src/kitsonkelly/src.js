@@ -38,14 +38,16 @@ require([
 				app.lastFMPager = new LastFMPager({
 					data: response
 				}, "lastFM");
+			}, function(err){
+				console.log(err);
 			});
 		}
 	}
 
 	function loadPage(page){
 		function placePage(response){
-			domConst.place('<div id="section">' + response.content + '</div>', "section", "replace");
-			domConst.place('<div id="header"><h1>' + response.title + '</h1><p>' + response.subtitle + '</p></div>', "header", "replace");
+			domConst.place('<div id="section" class="section">' + response.content + '</div>', "section", "replace");
+			domConst.place('<div id="header" class="header"><h1>' + response.title + '</h1><p>' + response.subtitle + '</p></div>', "header", "replace");
 			if(response.connectItems){
 				connectItems();
 			}

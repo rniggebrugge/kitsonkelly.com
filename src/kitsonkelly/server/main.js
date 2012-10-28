@@ -2,10 +2,12 @@ require([
 	"dojo/node!util",
 	"dojo/node!express",
 	"dojo/node!jade",
+	"dojo/node!stylus",
+	"dojo/node!nib",
 	"dojo/Deferred",
 	"dojo/promise/all",
 	"kitsonkelly/server/as"
-], function(util, express, jade, Deferred, all, as){
+], function(util, express, jade, stylus, nib, Deferred, all, as){
 	var app = express.createServer(),
 		appPort = process.env.PORT || 8001;
 
@@ -17,18 +19,29 @@ require([
 
 	NotFound.prototype.__proto__ = Error.prototype;
 
+	function compile(str, path){
+		return stylus(str).
+			set("filename", path).
+			use(nib());
+	}
+
 	app.configure(function(){
-		app.set('view options', { layout: false });
-		app.set('view engine', 'jade');
-		app.use(express.favicon('./images/favicon.ico'));
+		app.locals.pretty = true;
+		app.set("view engine", "jade");
+		app.set("view options", { layout: false });
+		app.set("views", "views");
+		app.use(express.favicon("./images/favicon.ico"));
 		app.use(express.cookieParser());
-		app.use(express.session({ secret: 'yHCoyEPZ9WsNDORGb9SDDMNn0OOMcCgQiW5q8VFhDHJiztvvVVCPkZQWUAXl' }));
+		app.use(express.session({ secret: "yHCoyEPZ9WsNDORGb9SDDMNn0OOMcCgQiW5q8VFhDHJiztvvVVCPkZQWUAXl" }));
 		app.use(app.router);
 		
-		app.use("/lib/dojo", express["static"]("../../lib/dojo"));
-		app.use("/lib/dijit", express["static"]("../../lib/dijit"));
-		app.use("/lib/dojox", express["static"]("../../lib/dojox"));
-		app.use("/lib", express["static"]("./lib"));
+		app.use(stylus.middleware({
+			src: ".",
+			compile: compile,
+			compress: true
+		}));
+
+		app.use("/lib", express["static"]("./src"));
 		app.use("/css", express["static"]("./css"));
 		app.use("/images", express["static"]("./images"));
 		app.use("/static", express["static"]("./static"));
@@ -50,7 +63,9 @@ require([
 		
 		app.use(function(error, request, response, next){
 			response.status(error.status || 500);
-			response.render('500', { error: error });
+			response.render('500', {
+				error: error
+			});
 		});
 	});
 
@@ -142,6 +157,7 @@ require([
 	});
 
 	app.get('/500', function(request, response, next){
+		// TODO: Handle different response encodings (html/json)
 		next(new Error('All your base are belong to us!'));
 	});
 

@@ -13,7 +13,22 @@ html
     block scripts
       script(type="text/javascript")
         dojoConfig = {
-          async: true,
+          async: 1,
+          "config-selectorEngine": "lite",
+          baseUrl: "/lib/",
+          packages: [{
+              name: "dojo",
+              location: "dojo"
+            },{
+              name: "dijit",
+              location: "dijit"
+            },{
+              name: "dojox",
+              location: "dojox"
+            },{
+              name: "kitsonkelly",
+              location: "kitsonkelly"
+            }],
           deps: ["kitsonkelly/src"]
         };
       script(type="text/javascript", src='/lib/dojo/dojo.js')
@@ -30,13 +45,13 @@ html
       })();
 
   body.claro
-    #wrap_top
+    .wrap_top
       block header
-        #header
+        #header.header
           h1= title
           p= subtitle
       block navigation
-        #nav
+        .nav
           ul
             li 
               a.button(href="/", id="navhome", rel="section") home
@@ -48,8 +63,8 @@ html
               a.button(href="/cv", id="navcv", rel="section", title="Hire Me") cv/résumé
             li 
               a.button(href="//blog.kitsonkelly.com/", target="_blank", title="Seven Foot Tall Cactus") blog
-    #wrap_cont
-      #section
+    .wrap_cont
+      #section.section
         block content
-      #footer
+      .footer
         block footer

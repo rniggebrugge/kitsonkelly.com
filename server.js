@@ -8,7 +8,13 @@ var initModule = "kitsonkelly/server/main";
 
 // Dojo Configuration
 dojoConfig = {
-	async: true,
+	hasCache: {
+		"host-node": 1,
+		"dom": 0,
+		"dojo-built": 1
+	},
+	trace: 1,
+	async: 1,
 	baseUrl: "src/",
 	packages: [{
 		name: "dojo",

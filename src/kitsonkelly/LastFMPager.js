@@ -2,15 +2,21 @@ define([
 	"dojo/_base/declare",
 	"dijit/_WidgetBase",
 	"dijit/_TemplatedMixin",
-	"dijit/layout/_LayoutWidget",
+	"dijit/layout/StackContainer",
 	"dojo/text!./resources/_LastFMPane.html"
-], function(declare, _WidgetBase, _TemplatedMixin, _LayoutWidget, template){
+], function(declare, _WidgetBase, _TemplatedMixin, StackContainer, template){
 
 	var _LastFMPane = declare([_WidgetBase, _TemplatedMixin], {
 		template: template
 	});
 
-	return declare([_LayoutWidget],{
-		data: null
+	return declare([StackContainer],{
+		store: null,
+
+		
+
+		refresh: function(){
+
+		}
 	});
 });

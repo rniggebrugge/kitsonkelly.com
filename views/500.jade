@@ -1,9 +1,5 @@
 extends layout
 
-prepend head
-  title = "Kitson P. Kelly"
-  subtitle = "500 - Internal Error"
-
 block content
   h1 Error: #{error.message}
   pre= error.stack

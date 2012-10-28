@@ -8,7 +8,7 @@ define([
 	var server = "ws.audioscrobbler.com",
 		method = "user.getrecenttracks",
 		user = "kitsonk",
-		apiKey = "b25b959554ed76058ac220b7b2e0a026";
+		apiKey = "f58131afcb62f56e2abc82f1bf2dbc09";
 
 	handlers.register("xml2js", function(response){
 		var parser = new xml2js.Parser(),
@@ -24,7 +24,21 @@ define([
 		return request.get("http://" + server + "/2.0/?method=" + method + "&user=" + user + "&api_key=" + apiKey, {
 			handleAs: "xml2js"
 		}).then(function(result){
-			return result;
+			var tracks = [];
+			result.recenttracks.track.forEach(function(track){
+				var t = {
+					artist: track.artist["#"],
+					name: track.name,
+					streamable: track.streamable === "1" ? true : false,
+					image: {},
+					date: parseInt(track.date["@"].uts, 10)
+				};
+				track.image.forEach(function(image){
+					t.image[image["@"].size] = image["#"];
+				});
+				tracks.push(t);
+			});
+			return tracks;
 		});
 	};
 });
