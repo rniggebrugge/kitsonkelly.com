@@ -13,7 +13,7 @@ define([
 	var app = express(),
 		appPort = process.env.PORT || 8001,
 		env = process.env.NODE_ENV || "development",
-		root = '/src';
+		root = '/lib';
 
 	function compile(str, path){
 		return stylus(str).
@@ -39,10 +39,10 @@ define([
 		}));
 
 		app.use("/src", express["static"]("./src"));
-		app.use("/lib", express["static"]("./lib"));
-		app.use("/css", express["static"]("./css"));
-		app.use("/images", express["static"]("./images"));
-		app.use("/static", express["static"]("./static"));
+		app.use("/lib", express["static"]("./lib"), { maxAge: 86400000 });
+		app.use("/css", express["static"]("./css"), { maxAge: 86400000 });
+		app.use("/images", express["static"]("./images"), { maxAge: 86400000 });
+		app.use("/static", express["static"]("./static"), { maxAge: 86400000 });
 		
 		app.use("/500", function(request, response, next){
 			next(new Error("All your base are belong to us!"));

@@ -1,6 +1,6 @@
 var profile = (function () {
 	return {
-		releaseDir: 'lib',
+		releaseDir: '../lib',
 		basePath: 'src',
 		action: 'release',
 		mini: true,

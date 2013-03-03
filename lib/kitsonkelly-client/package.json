@@ -1,0 +1,19 @@
+{
+	"name": "kitsonkelly-client",
+	"version": "1.0.0",
+	"directories": {
+		"lib": "."
+	},
+	"main": "main",
+	"description": "Dojo eXtensions, a rollup of many useful sub-projects and varying states of maturity – from very stable and robust, to alpha and experimental. See individual projects contain README files for details.",
+	"licenses": [
+		{
+			"type": "BSD",
+			"url": "https://github.com/kitsonk/kitsonkelly.com/blob/master/LICENSE"
+		}
+	],
+	"bugs": "https://github.com/kitsonk/kitsonkelly.com/issues",
+	"keywords": ["JavaScript", "Dojo", "Toolkit", "DojoX"],
+	"homepage": "http://www.kitsonkelly.com/",
+	"dojoBuild": "package.js"
+}

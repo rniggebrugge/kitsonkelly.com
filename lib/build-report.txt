@@ -1,171 +1,173 @@
-Build started: Sun Jul 29 2012 22:25:09 GMT+0100 (BST)
+Build started: Sun Mar 03 2013 17:25:48 GMT+0000 (GMT)
 Build application version: 1.7.0dev (23930)
 Messages:
-info(100) Assumed module uses legacy loader API.
-	module: dojox/jq
-	module: dojox/rails
-	module: dojox/data/ItemExplorer
-	module: dojox/data/restListener
-	module: dojox/data/StoreExplorer
-	module: dojox/data/demos/stores/LazyLoadJSIStore
-	module: dojox/data/demos/widgets/FileView
-	module: dojox/data/demos/widgets/FlickrViewList
-	module: dojox/data/demos/widgets/PicasaView
-	module: dojox/data/demos/widgets/PicasaViewList
-	module: dojox/drawing/plugins/drawing/Silverlight
-	module: dojox/editor/plugins/ResizeTableColumn
-	module: dojox/editor/plugins/SpellCheck
-	module: dojox/flash/_base
-	module: dojox/help/_base
-	module: dojox/help/console
-	module: dojox/image/Gallery
-	module: dojox/image/SlideShow
-	module: dojox/image/ThumbnailPicker
-	module: dojox/jsonPath/query
-	module: dojox/lang/aspect
-	module: dojox/lang/async
-	module: dojox/lang/docs
-	module: dojox/lang/observable
-	module: dojox/lang/typed
-	module: dojox/lang/aspect/cflow
-	module: dojox/lang/aspect/counter
-	module: dojox/lang/aspect/memoizer
-	module: dojox/lang/aspect/memoizerGuard
-	module: dojox/lang/aspect/profiler
-	module: dojox/lang/aspect/timer
-	module: dojox/lang/aspect/tracer
-	module: dojox/lang/async/event
-	module: dojox/lang/async/timeout
-	module: dojox/lang/async/topic
-	module: dojox/lang/functional/binrec
-	module: dojox/lang/functional/curry
-	module: dojox/lang/functional/linrec
-	module: dojox/lang/functional/listcomp
-	module: dojox/lang/functional/multirec
-	module: dojox/lang/functional/numrec
-	module: dojox/lang/functional/tailrec
-	module: dojox/lang/functional/util
-	module: dojox/lang/functional/zip
-	module: dojox/lang/oo/aop
-	module: dojox/lang/oo/Decorator
-	module: dojox/lang/oo/Filter
-	module: dojox/lang/oo/general
-	module: dojox/lang/oo/mixin
-	module: dojox/lang/oo/rearrange
-	module: dojox/layout/BorderContainer
-	module: dojox/layout/dnd/Avatar
-	module: dojox/layout/dnd/PlottedDnd
-	module: dojox/layout/ext-dijit/layout/StackContainer-touch
-	module: dojox/mobile/app/_base
-	module: dojox/mobile/app/_event
-	module: dojox/mobile/app/_FormWidget
-	module: dojox/mobile/app/_Widget
-	module: dojox/mobile/app/AlertDialog
-	module: dojox/mobile/app/compat
-	module: dojox/mobile/app/ImageThumbView
-	module: dojox/mobile/app/ImageView
-	module: dojox/mobile/app/List
-	module: dojox/mobile/app/ListSelector
-	module: dojox/mobile/app/SceneAssistant
-	module: dojox/mobile/app/SceneController
-	module: dojox/mobile/app/StageController
-	module: dojox/mobile/app/TextBox
-	module: dojox/robot/recorder
-	module: dojox/secure/capability
-	module: dojox/secure/DOM
-	module: dojox/secure/fromJson
-	module: dojox/secure/sandbox
-	module: dojox/socket/Reconnect
-	module: dojox/sql/_base
-	module: dojox/sql/_crypto
-	module: dojox/storage/_common
-	module: dojox/storage/AirDBStorageProvider
-	module: dojox/storage/AirEncryptedLocalStorageProvider
-	module: dojox/storage/AirFileStorageProvider
-	module: dojox/storage/BehaviorStorageProvider
-	module: dojox/storage/CookieStorageProvider
-	module: dojox/storage/FlashStorageProvider
-	module: dojox/storage/GearsStorageProvider
-	module: dojox/storage/LocalStorageProvider
-	module: dojox/storage/manager
-	module: dojox/storage/Provider
-	module: dojox/storage/WhatWGStorageProvider
-	module: dojox/widget/AnalogGauge
-	module: dojox/widget/BarGauge
-	module: dojox/widget/DataPresentation
-	module: dojox/widget/DocTester
-	module: dojox/widget/DynamicTooltip
-	module: dojox/widget/FeedPortlet
-	module: dojox/widget/FilePicker
-	module: dojox/widget/Iterator
-	module: dojox/widget/Loader
-	module: dojox/widget/RollingList
-	module: dojox/widget/SortList
-	module: dojox/widget/gauge/_Gauge
-	module: dojox/widget/gauge/AnalogArcIndicator
-	module: dojox/widget/gauge/AnalogArrowIndicator
-	module: dojox/widget/gauge/AnalogNeedleIndicator
-	module: dojox/widget/gauge/BarIndicator
-	module: dojox/wire/_base
-	module: dojox/wire/CompositeWire
-	module: dojox/wire/DataWire
-	module: dojox/wire/TableAdapter
-	module: dojox/wire/TextAdapter
-	module: dojox/wire/TreeAdapter
-	module: dojox/wire/Wire
-	module: dojox/wire/XmlWire
-	module: dojox/wire/demos/TableContainer
-	module: dojox/wire/demos/WidgetRepeater
-	module: dojox/wire/ml/Action
-	module: dojox/wire/ml/Data
-	module: dojox/wire/ml/DataStore
-	module: dojox/wire/ml/Invocation
-	module: dojox/wire/ml/JsonHandler
-	module: dojox/wire/ml/RestHandler
-	module: dojox/wire/ml/Service
-	module: dojox/wire/ml/Transfer
-	module: dojox/wire/ml/util
-	module: dojox/wire/ml/XmlHandler
-	module: dojox/xmpp/bosh
-	module: dojox/xmpp/ChatService
-	module: dojox/xmpp/PresenceService
-	module: dojox/xmpp/RosterService
-	module: dojox/xmpp/sasl
-	module: dojox/xmpp/TransportSession
-	module: dojox/xmpp/UserService
-	module: dojox/xmpp/util
-	module: dojox/xmpp/xmppSession
-	module: dojox/xmpp/widget/ChatSession
 info(103) Optimizing module complete.
-	/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js (compile time:0.351s)
-	/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly/server/main.js (compile time:0.568s)
-	/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly/src.js (compile time:1.185s)
-info(104) Optimizer messages.
-	/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:
-Done (compile time:0.351s)
-/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly/server/main.js:
-Done (compile time:0.568s)
-/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly/src.js:
-Done (compile time:1.185s)
-
+	/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js (compile time:6.556s)
+	/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js (compile time:14.251s)
+info(106) Optimizing CSS.
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dojo/_firebug/firebug.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dojo/resources/dnd.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dojo/resources/dojo.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/icons/commonIcons.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/icons/commonIcons_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/icons/editorIcons.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/icons/editorIcons_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/dijit.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/dijit_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Calendar.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Calendar_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/claro.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/claro_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/ColorPalette.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Common.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Dialog.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Dialog_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/document.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Editor.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Editor_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/InlineEditBox.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Menu.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Menu_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/ProgressBar.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/ProgressBar_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/TimePicker.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/TimePicker_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/TitlePane.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/TitlePane_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Toolbar.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Toolbar_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Tree.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/form/Button.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/form/Button_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/form/Checkbox.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/form/Common.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/form/Common_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/form/NumberSpinner.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/form/RadioButton.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/form/Select.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/form/Slider.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/form/Slider_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/layout/AccordionContainer.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/layout/BorderContainer.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/layout/ContentPane.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/layout/TabContainer.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/layout/TabContainer_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Calendar.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Calendar_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/ColorPalette.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Common.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Dialog.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Dialog_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Editor.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Editor_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Menu.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Menu_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/nihilo.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/nihilo_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/ProgressBar.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/ProgressBar_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/TimePicker.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/TimePicker_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/TitlePane.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/TitlePane_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Toolbar.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Tree.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Tree_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/form/Button.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/form/Button_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/form/Checkbox.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/form/Common.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/form/RadioButton.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/form/Select.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/form/Slider.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/form/Slider_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/form/TimeTextBox.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/layout/AccordionContainer.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/layout/AccordionContainer_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/layout/BorderContainer.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/layout/ContentPane.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/layout/SplitContainer.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/layout/TabContainer.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/layout/TabContainer_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Calendar.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Calendar_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/ColorPalette.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Common.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Dialog.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Dialog_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Editor.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Editor_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Menu.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Menu_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/ProgressBar.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/ProgressBar_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/soria.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/soria_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/TimePicker.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/TimePicker_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/TitlePane.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/TitlePane_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Toolbar.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Tree.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Tree_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/form/Button.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/form/Button_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/form/Checkbox.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/form/Common.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/form/RadioButton.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/form/Select.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/form/Slider.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/form/Slider_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/form/TimeTextBox.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/layout/AccordionContainer.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/layout/AccordionContainer_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/layout/BorderContainer.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/layout/ContentPane.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/layout/SplitContainer.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/layout/TabContainer.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/layout/TabContainer_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/Calendar.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/Calendar_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/ColorPalette.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/Common.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/Dialog.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/Dialog_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/Editor.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/Editor_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/Menu.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/Menu_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/ProgressBar.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/ProgressBar_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/TimePicker.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/TimePicker_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/TitlePane.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/TitlePane_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/Toolbar.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/Tree.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/Tree_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/tundra.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/tundra_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/form/Button.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/form/Checkbox.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/form/Common.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/form/RadioButton.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/form/Select.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/form/Slider.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/form/Slider_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/layout/AccordionContainer.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/layout/BorderContainer.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/layout/ContentPane.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/layout/SplitContainer.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/layout/TabContainer.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/layout/TabContainer_rtl.css
 info(107) Package Version:
-	package: dojo; version: 1.8.0dev
-	package: dijit; version: 1.8.0dev
-	package: dojox; version: 1.8.0dev
-	package: kitsonkelly; version: 1.0.0
+	package: dojo; version: 1.9.0dev
+	package: dijit; version: 1.9.0dev
+	package: kitsonkelly-client; version: 1.0.0
 warn(216) dojo/has plugin resource could not be resolved during build-time.
-	plugin resource id: host-browser?./_base/xhr; reference module id: dojo/i18n
-	plugin resource id: dojo-firebug?./_firebug/firebug; reference module id: dojo/main
-	plugin resource id: host-browser?./_base/browser; reference module id: dojo/main
 	plugin resource id: dom-addeventlistener?:./aspect; reference module id: dojo/on
-	plugin resource id: host-browser?./domReady; reference module id: dojo/ready
-	plugin resource id: host-browser?./_base/xhr; reference module id: dojo/text
-	plugin resource id: host-browser?../_base/window:; reference module id: dojo/request/watch
 	plugin resource id: host-browser?dom-addeventlistener?:../on:; reference module id: dojo/request/watch
-	plugin resource id: dojo-parser?:dojo/_base/window; reference module id: dojox/mvc/parserExtension
-	plugin resource id: dojo-mobile-parser?:dojo/parser; reference module id: dojox/mvc/parserExtension
-	plugin resource id: dojo-parser?:dojox/mobile/parser; reference module id: dojox/mvc/parserExtension
-	plugin resource id: touch?dojox/gesture/tap; reference module id: dojox/treemap/DrillDownUp
+	plugin resource id: dojo-bidi?./_BidiMixin; reference module id: dijit/_WidgetBase
 warn(224) A plugin dependency was encountered but there was no build-time plugin resolver.
 	module: dojo/request; plugin: dojo/request/default
 	module: dojo/request/node; plugin: dojo/node
@@ -173,18 +175,13 @@ warn(224) A plugin dependency was encountered but there was no build-time plugin
 	module: dojo/request/node; plugin: dojo/node
 	module: dojo/request/node; plugin: dojo/node
 	module: dojo/request/registry; plugin: dojo/request/default
-	module: dojox/mobile/DatePicker; plugin: dojox/mobile/_PickerChooser
-	module: dojox/mobile/TimePicker; plugin: dojox/mobile/_PickerChooser
-	module: kitsonkelly/server/as; plugin: dojo/node
-	module: kitsonkelly/server/main; plugin: dojo/node
-	module: kitsonkelly/server/main; plugin: dojo/node
-	module: kitsonkelly/server/main; plugin: dojo/node
+	module: dijit/Tree; plugin: dojo/query
 Layer Contents:
 dojo/dojo:
 	dojo/dojo
 
-kitsonkelly/src:
-	kitsonkelly/src
+kitsonkelly-client/main:
+	kitsonkelly-client/main
 	dojo/_base/array
 	dojo/_base/kernel
 	dojo/has
@@ -208,6 +205,7 @@ kitsonkelly/src:
 	dojo/_base/sniff
 	dojo/keys
 	dojo/ready
+	dojo/domReady
 	dojo/request
 	dojo/request/default
 	dojo/router
@@ -247,61 +245,402 @@ kitsonkelly/src:
 	dijit/hccss
 	dojo/hccss
 	dijit/_TemplatedMixin
-	dojo/touch
-	dojo/string
 	dojo/cache
 	dojo/text
+	dojo/string
+	dijit/_AttachMixin
+	dojo/touch
 	dijit/BackgroundIframe
 	dijit/templates/Tooltip.html
-	kitsonkelly/LastFMPager
+	kitsonkelly-client/LastFMPager
+	dijit/layout/StackContainer
+	dojo/cookie
+	dojo/regexp
 	dijit/layout/_LayoutWidget
 	dijit/_Container
 	dijit/_Contained
 	dijit/Viewport
-	kitsonkelly/resources/_LastFMPane.html
-
-kitsonkelly/server/main:
-	kitsonkelly/server/main
-	dojo/node
-	dojo/has
-	dojo/Deferred
-	dojo/_base/lang
-	dojo/_base/kernel
-	dojo/_base/config
-	dojo/sniff
-	dojo/errors/CancelError
-	dojo/errors/create
-	dojo/promise/Promise
-	dojo/promise/instrumentation
-	dojo/promise/tracer
-	dojo/Evented
-	dojo/aspect
-	dojo/on
-	dojo/_base/array
-	dojo/promise/all
-	dojo/when
-	kitsonkelly/server/as
-	dojo/request
-	dojo/request/default
-	dojo/request/handlers
+	dojo/i18n
+	dojo/_base/xhr
+	dojo/io-query
+	dojo/dom-form
 	dojo/json
+	dojo/_base/Deferred
+	dojo/_base/json
+	dojo/request/watch
+	dojo/request/util
+	dojo/errors/RequestError
+	dojo/errors/RequestTimeoutError
+	dojo/request/xhr
+	dojo/request/handlers
+	dijit/nls/common
+	kitsonkelly-client/resources/_LastFMPane.html
 
 Optimizer Messages:
 /Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:
-Done (compile time:0.351s)
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:148: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:158: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:189: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:206: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:532: WARNING - unreachable code
+					if( 0  && p=="async"){
+					                     ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:629: WARNING - unreachable code
+		if( 0  ||  0 ){
+		              ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:663: WARNING - unreachable code
+		if( 0 ){
+		       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:678: WARNING - unreachable code
+		if( 0 ){
+		       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:690: WARNING - unreachable code
+	}else{
+	     ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:706: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:719: WARNING - unreachable code
+				if( 0  && comboPending && !comboPendingTimer){
+				                                             ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:818: WARNING - unreachable code
+				if( 0 ){
+				       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:823: WARNING - unreachable code
+				if( 0 ){
+				       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:910: WARNING - unreachable code
+			if( 0 ){
+			       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:984: WARNING - unreachable code
+			}else if( 0 ){
+			             ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1015: WARNING - unreachable code
+				if( 0  && legacyMode == sync && !plugin.executed){
+				                                                 ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1087: WARNING - unreachable code
+			if( 0 ){
+			       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1197: WARNING - unreachable code
+				if( 0 ){
+				       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1273: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1340: WARNING - unreachable code
+				if( 0 ){
+				       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1373: WARNING - unreachable code
+				if( 0 ){
+				       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1409: WARNING - unreachable code
+					if( 0  && legacyMode){
+					                     ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1425: WARNING - unreachable code
+				if( 0  && legacyMode){
+				                     ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1510: WARNING - unreachable code
+				if( 0  && module.plugin && module.plugin.isCombo){
+				                                                 ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1546: WARNING - unreachable code
+				if( 0  && legacyMode && !waiting[mid]){
+				                                      ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1586: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1674: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1686: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1753: WARNING - unreachable code
+		if( 0  && args[1]===defaultDeps){
+		                                ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1787: WARNING - unreachable code
+				if( 0  && !targetModule){
+				                        ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1797: WARNING - unreachable code
+			if( 0  && isArray(targetModule)){
+			                                ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1815: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1845: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1874: WARNING - unreachable code
+		if( 0 ){
+		       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1881: WARNING - unreachable code
+		if( 0 ){
+		       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1886: WARNING - unreachable code
+	if( 0  && req.combo && req.combo.plugins){
+	                                         ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1900: WARNING - unreachable code
+	if(! 1 ){
+	        ^
+
+0 error(s), 37 warning(s)
+Done (compile time:6.556s)
 /Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:
-Done (compile time:0.351s)
-/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly/server/main.js:
-Done (compile time:0.568s)
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:
-Done (compile time:0.351s)
-/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly/server/main.js:
-Done (compile time:0.568s)
-/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly/src.js:
-Done (compile time:1.185s)
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:148: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:158: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:189: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:206: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:532: WARNING - unreachable code
+					if( 0  && p=="async"){
+					                     ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:629: WARNING - unreachable code
+		if( 0  ||  0 ){
+		              ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:663: WARNING - unreachable code
+		if( 0 ){
+		       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:678: WARNING - unreachable code
+		if( 0 ){
+		       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:690: WARNING - unreachable code
+	}else{
+	     ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:706: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:719: WARNING - unreachable code
+				if( 0  && comboPending && !comboPendingTimer){
+				                                             ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:818: WARNING - unreachable code
+				if( 0 ){
+				       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:823: WARNING - unreachable code
+				if( 0 ){
+				       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:910: WARNING - unreachable code
+			if( 0 ){
+			       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:984: WARNING - unreachable code
+			}else if( 0 ){
+			             ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1015: WARNING - unreachable code
+				if( 0  && legacyMode == sync && !plugin.executed){
+				                                                 ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1087: WARNING - unreachable code
+			if( 0 ){
+			       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1197: WARNING - unreachable code
+				if( 0 ){
+				       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1273: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1340: WARNING - unreachable code
+				if( 0 ){
+				       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1373: WARNING - unreachable code
+				if( 0 ){
+				       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1409: WARNING - unreachable code
+					if( 0  && legacyMode){
+					                     ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1425: WARNING - unreachable code
+				if( 0  && legacyMode){
+				                     ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1510: WARNING - unreachable code
+				if( 0  && module.plugin && module.plugin.isCombo){
+				                                                 ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1546: WARNING - unreachable code
+				if( 0  && legacyMode && !waiting[mid]){
+				                                      ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1586: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1674: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1686: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1753: WARNING - unreachable code
+		if( 0  && args[1]===defaultDeps){
+		                                ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1787: WARNING - unreachable code
+				if( 0  && !targetModule){
+				                        ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1797: WARNING - unreachable code
+			if( 0  && isArray(targetModule)){
+			                                ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1815: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1845: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1874: WARNING - unreachable code
+		if( 0 ){
+		       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1881: WARNING - unreachable code
+		if( 0 ){
+		       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1886: WARNING - unreachable code
+	if( 0  && req.combo && req.combo.plugins){
+	                                         ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1900: WARNING - unreachable code
+	if(! 1 ){
+	        ^
+
+0 error(s), 37 warning(s)
+Done (compile time:6.556s)
+/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js:
+/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js:494: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js:537: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js:676: WARNING - unreachable code
+	if(! 1 ){
+	        ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js:1004: WARNING - unreachable code
+	}else{
+	     ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js:3224: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js:4605: WARNING - unreachable code
+		if( 0 ){
+		       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js:5153: WARNING - unreachable code
+	if(! 1 ){
+	        ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js:5447: WARNING - unreachable code
+	if( 0  && dojo.config.parseOnLoad && !dojo.isAsync){
+	                                                   ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js:5688: WARNING - unreachable code
+	}else if( 0 ){
+	      ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js:10507: WARNING - unreachable code
+if( 0 ){
+       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js:11601: WARNING - unreachable code
+if( 0 ){
+       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js:14944: WARNING - unreachable code
+	}else{
+	     ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js:15956: WARNING - unreachable code
+if( 0 ){
+       ^
+
+/Users/kitsonk/github/kitsonkelly.com/lib/kitsonkelly-client/main.js:19406: WARNING - unreachable code
+		if(! 1 ){ return; }
+		        ^
+
+0 error(s), 14 warning(s)
+Done (compile time:14.251s)
 
 
 Process finished normally
 	errors: 0
-	warnings: 24
-	build time: 13.208 seconds
+	warnings: 10
+	build time: 21.934 seconds
