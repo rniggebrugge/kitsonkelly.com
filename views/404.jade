@@ -1,16 +1,23 @@
 extends layout
 
 prepend head
-  title = "Kitson P. Kelly"
+  title = "404 - Resource Not Found"
   subtitle = "404 - Resource Not Found"
 
+prepend body
+  body.red
+
 block content
-  #resource The requested resource 
-    code= url
-    |  was not found.
+  h1 #{title}
+  hr
+  h2 #{url}
+  .main
+    p
+      | Ooops... That wasn't supposed to happen. That thing you requested (<code>#{url}</code>) isn't here.  It may
+      | have been my mistake, actually it probablly was.  I wouldn't want to blame you.  Some people have been known
+      | to specifically make me go look for something so they can see what I will do, wasting my time, running around
+      | looking for something that wasn't there.  You don't seem like that sort of person, at least I hope not, not
+      | that I am implying anything.  That would be be rude and presumptious of me.
     p 
-      | It might be easier to go back to the 
-      a(href="/") homepage
-      |  
-      |  and try again.  Sorry...
-  include server
+      | Anyways, I do tend to ramble on, so it might be easier to go back to the <a href="/">homepage</a> and start
+      | again.  One of these days I am going to find all these other things that have gone missing. Sorry...

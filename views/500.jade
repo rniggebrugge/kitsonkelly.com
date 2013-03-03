@@ -1,6 +1,23 @@
 extends layout
 
+prepend head
+  title = "500 - Internal Error"
+  subtitle = "Error Has Occured"
+
+prepend body
+  body.red
+
 block content
-  h1 Error: #{error.message}
-  pre= error.stack
-  include server
+  h1 #{title}
+  hr
+  h2 #{error.name}
+  .main
+    p
+      | Ooops... Hrmmmm.  That wasn't supposed to happen.  Really, I didn't exect that.  Who would?  You write some code
+      | thinking you have all your bases covered and then “bam!” you get smacked in the face with something like this.
+      | Well I will go away and think about this, but before I go, here is some information that might be useful for
+      | a situation like this:
+    p The error name was <code>#{error.name}</code> and the error message was:
+    pre= error.message
+    p Here is the call stack:
+    pre= error.stack

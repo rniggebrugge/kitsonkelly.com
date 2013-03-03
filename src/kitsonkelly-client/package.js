@@ -1,21 +1,24 @@
 var profile = (function(){
-	var testResourceRe = /^dojo\/tests\//,
+	var testResourceRe = /^kitsonkelly-client\/tests\//,
+		miniResourceRe = /\.styl$/,
 
 		copyOnly = function(filename, mid){
 			var list = {
-				"kitsonkelly/kitsonkelly.profile":1,
-				"kitsonkelly/package.json":1,
-				"kitsonkelly/tests":1
+				"kitsonkelly-client/package":1,
+				"kitsonkelly-client/package.json":1
 			};
-			return (mid in list) ||
-				(/^kitsonkelly\/resources\//.test(mid) && !/\.css$/.test(filename)) ||
+			return (mid in list) || (/^kitsonkelly-client\/resources\//.test(mid) && !/\.(css|styl)$/.test(filename)) ||
 				/(png|jpg|jpeg|gif|tiff)$/.test(filename);
 		};
 
 	return {
 		resourceTags:{
 			test: function(filename, mid){
-				return testResourceRe.test(mid) || mid=="dojo/tests" || mid=="dojo/robot" || mid=="dojo/robotx";
+				return testResourceRe.test(mid);
+			},
+
+			mini: function(filename, mid){
+				return miniResourceRe.test(filename);
 			},
 
 			copyOnly: function(filename, mid){

@@ -2,20 +2,17 @@ doctype 5
 html
   head
     block head
-      link(rel="icon", type="png", href="images/kpk_logo_16.png")
-      title= title
+      link(rel="icon", type="png", href="images/logo_16.png")
+      title #{subtitle} &ndash; #{title}
 
     block css
-      style(type='text/css', media="all")
-        @import '/lib/dijit/themes/claro/claro.css';
-        @import '/css/global.css';
-      link(rel="stylesheet", type='text/css', href='/css/print.css', media='print')
+      link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Averia+Libre:400,700')
+      link(rel='stylesheet', type='text/css', href='/css/site.css', media='all')
     block scripts
       script(type="text/javascript")
         dojoConfig = {
           async: 1,
-          "config-selectorEngine": "lite",
-          baseUrl: "/lib/",
+          baseUrl: "#{root}/",
           packages: [{
               name: "dojo",
               location: "dojo"
@@ -23,15 +20,12 @@ html
               name: "dijit",
               location: "dijit"
             },{
-              name: "dojox",
-              location: "dojox"
-            },{
-              name: "kitsonkelly",
-              location: "kitsonkelly"
+              name: "kitsonkelly-client",
+              location: "kitsonkelly-client"
             }],
-          deps: ["kitsonkelly/src"]
+          deps: ["kitsonkelly-client/main"]
         };
-      script(type="text/javascript", src='/lib/dojo/dojo.js')
+      script(type="text/javascript", src='#{root}/dojo/dojo.js')
 
     script(type="text/javascript")
       var _gaq = _gaq || [];
@@ -44,27 +38,20 @@ html
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
-  body.claro
-    .wrap_top
-      block header
-        #header.header
-          h1= title
-          p= subtitle
-      block navigation
-        .nav
-          ul
-            li 
-              a.button(href="/", id="navhome", rel="section") home
-            li 
-              a.button(href="/dojo", id="navdojo", rel="section", title="Dojo Toolkit Stuff") dojo
-            li 
-              a.button(href="#", rel="section", title="Photobug Me") photos
-            li 
-              a.button(href="/cv", id="navcv", rel="section", title="Hire Me") cv/résumé
-            li 
-              a.button(href="//blog.kitsonkelly.com/", target="_blank", title="Seven Foot Tall Cactus") blog
-    .wrap_cont
-      #section.section
-        block content
-      .footer
-        block footer
+  block body
+    .header
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='/cv') CV/Résumé
+        li
+          a(href='/dojo') Dojo
+        li
+          a(href='/photos') Photos
+        li
+          a(href='/blog') Blog
+    .content
+      block content
+    .footer
+      .copy Copyright &copy; 2013 &ndash; All Rights Reserved

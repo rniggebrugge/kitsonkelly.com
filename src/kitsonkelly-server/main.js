@@ -1,23 +1,19 @@
-require([
-	"dojo/node!util",
+define([
 	"dojo/node!express",
 	"dojo/node!jade",
 	"dojo/node!stylus",
 	"dojo/node!nib",
+	"dojo/node!colors",
 	"dojo/Deferred",
 	"dojo/promise/all",
-	"kitsonkelly/server/as"
-], function(util, express, jade, stylus, nib, Deferred, all, as){
-	var app = express.createServer(),
-		appPort = process.env.PORT || 8001;
+	"./as"
+], function(express, jade, stylus, nib, colors, Deferred, all, as){
 
-	function NotFound(msg){
-		this.name = "Not Found";
-		Error.call(this, msg);
-		Error.captureStackTrace(this, arguments.callee);
-	}
-
-	NotFound.prototype.__proto__ = Error.prototype;
+	/* Setup Express Server */
+	var app = express(),
+		appPort = process.env.PORT || 8001,
+		env = process.env.NODE_ENV || "development",
+		root = '/src';
 
 	function compile(str, path){
 		return stylus(str).
@@ -28,11 +24,12 @@ require([
 	app.configure(function(){
 		app.locals.pretty = true;
 		app.set("view engine", "jade");
-		app.set("view options", { layout: false });
 		app.set("views", "views");
-		app.use(express.favicon("./images/favicon.ico"));
+		app.use(express.logger(env && env == "production" ? null : "dev"));
+		app.use(express.compress());
 		app.use(express.cookieParser());
-		app.use(express.session({ secret: "yHCoyEPZ9WsNDORGb9SDDMNn0OOMcCgQiW5q8VFhDHJiztvvVVCPkZQWUAXl" }));
+		app.use(express.cookieSession({ secret: "yHCoyEPZ9WsNDORGb9SDDMNn0OOMcCgQiW5q8VFhDHJiztvvVVCPkZQWUAXl" }));
+		app.use(express.favicon("./images/favicon.ico"));
 		app.use(app.router);
 		
 		app.use(stylus.middleware({
@@ -41,11 +38,16 @@ require([
 			compress: true
 		}));
 
-		app.use("/lib", express["static"]("./src"));
+		app.use("/src", express["static"]("./src"));
+		app.use("/lib", express["static"]("./lib"));
 		app.use("/css", express["static"]("./css"));
 		app.use("/images", express["static"]("./images"));
 		app.use("/static", express["static"]("./static"));
 		
+		app.use("/500", function(request, response, next){
+			next(new Error("All your base are belong to us!"));
+		});
+
 		app.use(function(request, response, next){
 			if(request.accepts('html')){
 				response.status(404);
@@ -70,15 +72,21 @@ require([
 	});
 
 	app.get('/', function(request, response, next){
-		response.render('index');
+		response.render('index', {
+			root: root
+		});
 	});
 
 	app.get('/cv', function(request, response, next){
-		response.render('cv');
+		response.render('cv', {
+			root: root
+		});
 	});
 
 	app.get('/dojo', function(request, response, next){
-		response.render('dojo');
+		response.render('dojo', {
+			root: root
+		});
 	});
 
 	app.get("/content/:view", function(request, response, next){
@@ -135,7 +143,11 @@ require([
 	});
 
 	app.get('/views/:view', function(request, response, next){
-		response.render(request.params.view);
+		response.render(request.params.view, {
+			root: root,
+			url: '/foo',
+			error: new Error('All your base are belong to us!')
+		});
 	});
 
 	app.get('/lastfm', function(request, response, next){
@@ -163,5 +175,5 @@ require([
 
 	app.listen(appPort);
 
-	util.puts('HTTP server started on port ' + appPort);
+	console.log('HTTP server started on port '.grey + appPort.toString().cyan);
 });

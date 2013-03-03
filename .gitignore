@@ -1,2 +1,4 @@
 .DS_Store
-css/*.css
+/css/*.css
+/node_modules
+/build.sh

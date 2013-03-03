@@ -1,4 +1,4 @@
-require([
+define([
 	"dojo/_base/array",
 	"dojo/dom",
 	"dojo/dom-construct",
@@ -7,7 +7,7 @@ require([
 	"dojo/request",
 	"dojo/router",
 	"dijit/Tooltip",
-	"kitsonkelly/LastFMPager"
+	"./LastFMPager"
 ], function(array, dom, domConst, on, ready, request, router, Tooltip, LastFMPager){
 
 	app = {
