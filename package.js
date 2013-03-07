@@ -50,13 +50,9 @@ var profile = (function () {
 
 		layers: {
 			'dojo/dojo': {
-				include: [ 'dojo/dojo' ],
+				include: [ 'dojo/dojo', 'kitsonkelly-client/main' ],
 				customBase: 1,
 				boot: 1
-			},
-			'kitsonkelly-client/main': {
-				include: [],
-				exclude: []
 			}
 		}
 	};
