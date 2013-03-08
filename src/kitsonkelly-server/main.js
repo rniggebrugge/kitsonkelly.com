@@ -51,7 +51,10 @@ define([
 		app.use(function(request, response, next){
 			if(request.accepts('html')){
 				response.status(404);
-				response.render('404', { url: request.url });
+				response.render('404', {
+					url: request.url,
+					root: root
+				});
 				return;
 			}
 
@@ -66,7 +69,8 @@ define([
 		app.use(function(error, request, response, next){
 			response.status(error.status || 500);
 			response.render('500', {
-				error: error
+				error: error,
+				root: root
 			});
 		});
 	});
@@ -83,8 +87,8 @@ define([
 		});
 	});
 
-	app.get('/dojo', function(request, response, next){
-		response.render('dojo', {
+	app.get('/code', function(request, response, next){
+		response.render('code', {
 			root: root
 		});
 	});
