@@ -5,9 +5,9 @@ define([
 	"dojo/node!nib",
 	"dojo/node!colors",
 	"dojo/Deferred",
-	"dojo/promise/all",
-	"./as"
-], function(express, jade, stylus, nib, colors, Deferred, all, as){
+	"dojo/promise/all"
+	// "./as"
+], function(express, jade, stylus, nib, colors, Deferred, all /*, as*/){
 
 	/* Setup Express Server */
 	var app = express(),
