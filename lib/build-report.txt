@@ -1,8 +1,8 @@
-Build started: Thu Mar 07 2013 21:05:55 GMT+0000 (GMT)
+Build started: Wed Jun 05 2013 15:52:45 GMT+0100 (BST)
 Build application version: 1.7.0dev (23930)
 Messages:
 info(103) Optimizing module complete.
-	/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js (compile time:10.645s)
+	/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js (compile time:13.123s)
 info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dojo/_firebug/firebug.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dojo/resources/dnd.css
@@ -15,13 +15,10 @@ info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/dijit_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Calendar.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Calendar_rtl.css
-	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/claro.css
-	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/claro_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/ColorPalette.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Common.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Dialog.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Dialog_rtl.css
-	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/document.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Editor.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Editor_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/InlineEditBox.css
@@ -36,6 +33,9 @@ info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Toolbar.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Toolbar_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Tree.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/claro.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/claro_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/document.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/form/Button.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/form/Button_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/form/Checkbox.css
@@ -61,8 +61,6 @@ info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Editor_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Menu.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Menu_rtl.css
-	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/nihilo.css
-	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/nihilo_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/ProgressBar.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/ProgressBar_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/TimePicker.css
@@ -72,6 +70,8 @@ info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Toolbar.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Tree.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/Tree_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/nihilo.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/nihilo_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/form/Button.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/form/Button_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/nihilo/form/Checkbox.css
@@ -100,8 +100,6 @@ info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Menu_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/ProgressBar.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/ProgressBar_rtl.css
-	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/soria.css
-	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/soria_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/TimePicker.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/TimePicker_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/TitlePane.css
@@ -109,6 +107,8 @@ info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Toolbar.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Tree.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/Tree_rtl.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/soria.css
+	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/soria_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/form/Button.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/form/Button_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/soria/form/Checkbox.css
@@ -160,8 +160,8 @@ info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/layout/TabContainer.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/layout/TabContainer_rtl.css
 info(107) Package Version:
-	package: dojo; version: 1.9.0dev
-	package: dijit; version: 1.9.0dev
+	package: dojo; version: 1.9.0
+	package: dijit; version: 1.9.0
 	package: kitsonkelly-client; version: 1.0.0
 warn(216) dojo/has plugin resource could not be resolved during build-time.
 	plugin resource id: dom-addeventlistener?:./aspect; reference module id: dojo/on
@@ -174,6 +174,7 @@ warn(224) A plugin dependency was encountered but there was no build-time plugin
 	module: dojo/request/node; plugin: dojo/node
 	module: dojo/request/node; plugin: dojo/node
 	module: dojo/request/registry; plugin: dojo/request/default
+	module: dijit/Fieldset; plugin: dojo/query
 	module: dijit/Tree; plugin: dojo/query
 Layer Contents:
 dojo/dojo:
@@ -215,9 +216,9 @@ dojo/dojo:
 	dojo/dom-class
 	dijit/_base/manager
 	dijit/registry
-	dojo/_base/unload
 	dijit/main
 	dijit/place
+	dijit/Viewport
 	dojo/window
 	dijit/_Widget
 	dojo/query
@@ -235,6 +236,7 @@ dojo/dojo:
 	dijit/Destroyable
 	dijit/_OnDijitClickMixin
 	dijit/a11yclick
+	dojo/touch
 	dijit/_FocusMixin
 	dijit/focus
 	dijit/a11y
@@ -246,7 +248,6 @@ dojo/dojo:
 	dojo/text
 	dojo/string
 	dijit/_AttachMixin
-	dojo/touch
 	dijit/BackgroundIframe
 	dijit/templates/Tooltip.html
 	kitsonkelly-client/LastFMPager
@@ -256,7 +257,6 @@ dojo/dojo:
 	dijit/layout/_LayoutWidget
 	dijit/_Container
 	dijit/_Contained
-	dijit/Viewport
 	dojo/i18n
 	dojo/_base/xhr
 	dojo/io-query
@@ -275,215 +275,215 @@ dojo/dojo:
 
 Optimizer Messages:
 /Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:148: WARNING - unreachable code
+dojo.js.uncompressed.js:148: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:158: WARNING - unreachable code
+dojo.js.uncompressed.js:158: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:189: WARNING - unreachable code
+dojo.js.uncompressed.js:189: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:206: WARNING - unreachable code
+dojo.js.uncompressed.js:206: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:532: WARNING - unreachable code
+dojo.js.uncompressed.js:544: WARNING - unreachable code
 					if( 0  && p=="async"){
 					                     ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:629: WARNING - unreachable code
+dojo.js.uncompressed.js:636: WARNING - unreachable code
 		if( 0  ||  0 ){
 		              ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:663: WARNING - unreachable code
+dojo.js.uncompressed.js:673: WARNING - unreachable code
 		if( 0 ){
 		       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:678: WARNING - unreachable code
+dojo.js.uncompressed.js:688: WARNING - unreachable code
 		if( 0 ){
 		       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:690: WARNING - unreachable code
+dojo.js.uncompressed.js:700: WARNING - unreachable code
 	}else{
 	     ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:706: WARNING - unreachable code
+dojo.js.uncompressed.js:716: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:719: WARNING - unreachable code
+dojo.js.uncompressed.js:729: WARNING - unreachable code
 				if( 0  && comboPending && !comboPendingTimer){
 				                                             ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:818: WARNING - unreachable code
+dojo.js.uncompressed.js:828: WARNING - unreachable code
 				if( 0 ){
 				       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:823: WARNING - unreachable code
+dojo.js.uncompressed.js:833: WARNING - unreachable code
 				if( 0 ){
 				       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:910: WARNING - unreachable code
+dojo.js.uncompressed.js:920: WARNING - unreachable code
 			if( 0 ){
 			       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:984: WARNING - unreachable code
+dojo.js.uncompressed.js:994: WARNING - unreachable code
 			}else if( 0 ){
 			             ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1015: WARNING - unreachable code
+dojo.js.uncompressed.js:1025: WARNING - unreachable code
 				if( 0  && legacyMode == sync && !plugin.executed){
 				                                                 ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1087: WARNING - unreachable code
+dojo.js.uncompressed.js:1097: WARNING - unreachable code
 			if( 0 ){
 			       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1197: WARNING - unreachable code
+dojo.js.uncompressed.js:1207: WARNING - unreachable code
 				if( 0 ){
 				       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1273: WARNING - unreachable code
+dojo.js.uncompressed.js:1282: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1340: WARNING - unreachable code
+dojo.js.uncompressed.js:1349: WARNING - unreachable code
 				if( 0 ){
 				       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1373: WARNING - unreachable code
+dojo.js.uncompressed.js:1382: WARNING - unreachable code
 				if( 0 ){
 				       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1409: WARNING - unreachable code
+dojo.js.uncompressed.js:1422: WARNING - unreachable code
 					if( 0  && legacyMode){
 					                     ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1425: WARNING - unreachable code
+dojo.js.uncompressed.js:1438: WARNING - unreachable code
 				if( 0  && legacyMode){
 				                     ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1510: WARNING - unreachable code
+dojo.js.uncompressed.js:1523: WARNING - unreachable code
 				if( 0  && module.plugin && module.plugin.isCombo){
 				                                                 ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1546: WARNING - unreachable code
+dojo.js.uncompressed.js:1559: WARNING - unreachable code
 				if( 0  && legacyMode && !waiting[mid]){
 				                                      ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1586: WARNING - unreachable code
+dojo.js.uncompressed.js:1599: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1674: WARNING - unreachable code
+dojo.js.uncompressed.js:1696: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1686: WARNING - unreachable code
+dojo.js.uncompressed.js:1708: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1753: WARNING - unreachable code
+dojo.js.uncompressed.js:1775: WARNING - unreachable code
 		if( 0  && args[1]===defaultDeps){
 		                                ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1787: WARNING - unreachable code
+dojo.js.uncompressed.js:1809: WARNING - unreachable code
 				if( 0  && !targetModule){
 				                        ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1797: WARNING - unreachable code
+dojo.js.uncompressed.js:1819: WARNING - unreachable code
 			if( 0  && isArray(targetModule)){
 			                                ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1815: WARNING - unreachable code
+dojo.js.uncompressed.js:1837: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1845: WARNING - unreachable code
+dojo.js.uncompressed.js:1867: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1874: WARNING - unreachable code
+dojo.js.uncompressed.js:1897: WARNING - unreachable code
 		if( 0 ){
 		       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1881: WARNING - unreachable code
+dojo.js.uncompressed.js:1904: WARNING - unreachable code
 		if( 0 ){
 		       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1886: WARNING - unreachable code
+dojo.js.uncompressed.js:1909: WARNING - unreachable code
 	if( 0  && req.combo && req.combo.plugins){
 	                                         ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:1900: WARNING - unreachable code
+dojo.js.uncompressed.js:1923: WARNING - unreachable code
 	if(! 1 ){
 	        ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:2537: WARNING - unreachable code
+dojo.js.uncompressed.js:2560: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:2580: WARNING - unreachable code
+dojo.js.uncompressed.js:2603: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:2719: WARNING - unreachable code
+dojo.js.uncompressed.js:2742: WARNING - unreachable code
 	if(! 1 ){
 	        ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:3047: WARNING - unreachable code
+dojo.js.uncompressed.js:3070: WARNING - unreachable code
 	}else{
 	     ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:5267: WARNING - unreachable code
+dojo.js.uncompressed.js:5327: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:6648: WARNING - unreachable code
+dojo.js.uncompressed.js:6720: WARNING - unreachable code
 		if( 0 ){
 		       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:7196: WARNING - unreachable code
+dojo.js.uncompressed.js:7268: WARNING - unreachable code
 	if(! 1 ){
 	        ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:7490: WARNING - unreachable code
+dojo.js.uncompressed.js:7568: WARNING - unreachable code
 	if( 0  && dojo.config.parseOnLoad && !dojo.isAsync){
 	                                                   ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:7731: WARNING - unreachable code
+dojo.js.uncompressed.js:7809: WARNING - unreachable code
 	}else if( 0 ){
 	      ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:12548: WARNING - unreachable code
+dojo.js.uncompressed.js:12671: WARNING - unreachable code
 if( 0 ){
        ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:13642: WARNING - unreachable code
-if( 0 ){
-       ^
+dojo.js.uncompressed.js:13765: WARNING - unreachable code
+	if( 0 ){
+	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:16985: WARNING - unreachable code
+dojo.js.uncompressed.js:17492: WARNING - unreachable code
 	}else{
 	     ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:17995: WARNING - unreachable code
-if( 0 ){
-       ^
+dojo.js.uncompressed.js:18271: WARNING - unreachable code
+	if( 0 ){
+	       ^
 
-/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:21445: WARNING - unreachable code
+dojo.js.uncompressed.js:21700: WARNING - unreachable code
 		if(! 1 ){ return; }
 		        ^
 
 0 error(s), 51 warning(s)
-Done (compile time:10.645s)
+Done (compile time:13.123s)
 
 
 Process finished normally
 	errors: 0
-	warnings: 10
-	build time: 15.758 seconds
+	warnings: 11
+	build time: 78.69 seconds
