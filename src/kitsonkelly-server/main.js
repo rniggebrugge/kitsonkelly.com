@@ -31,7 +31,7 @@ define([
 		app.use(express.cookieSession({ secret: "yHCoyEPZ9WsNDORGb9SDDMNn0OOMcCgQiW5q8VFhDHJiztvvVVCPkZQWUAXl" }));
 		app.use(express.favicon("./images/favicon.ico"));
 		app.use(app.router);
-		
+
 		app.use(stylus.middleware({
 			src: ".",
 			compile: compile,
