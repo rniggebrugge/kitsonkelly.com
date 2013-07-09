@@ -25,6 +25,9 @@ dojoConfig = {
 	},{
 		name: "kitsonkelly-server",
 		location: "kitsonkelly-server"
+	},{
+		name: 'setten',
+		location: 'setten'
 	}],
 
 	deps: [initModule]

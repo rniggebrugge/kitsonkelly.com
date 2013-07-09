@@ -1,51 +1,54 @@
 define([
-	"dojo/node!express",
-	"dojo/node!jade",
-	"dojo/node!stylus",
-	"dojo/node!nib",
-	"dojo/node!colors",
-	"dojo/Deferred",
-	"dojo/promise/all"
-	// "./as"
-], function(express, jade, stylus, nib, colors, Deferred, all /*, as*/){
+	'dojo/node!express',
+	'dojo/node!jade',
+	'dojo/node!stylus',
+	'dojo/node!nib',
+	'dojo/node!colors',
+	'dojo/node!gm',
+	'dojo/Deferred',
+	'dojo/promise/all',
+	'setten/dfs'
+], function(express, jade, stylus, nib, colors, gm, Deferred, all, dfs){
 
 	/* Setup Express Server */
 	var app = express(),
 		appPort = process.env.PORT || 8001,
-		env = process.env.NODE_ENV || "development",
+		env = process.env.NODE_ENV || 'development',
 		root = '/lib';
 
 	function compile(str, path){
 		return stylus(str).
-			set("filename", path).
+			set('filename', path).
+			set('compress', true).
 			use(nib());
 	}
 
 	app.configure(function(){
 		app.locals.pretty = true;
-		app.set("view engine", "jade");
-		app.set("views", "views");
-		app.use(express.logger(env && env == "production" ? null : "dev"));
+		app.set('view engine', 'jade');
+		app.set('views', 'views');
 		app.use(express.compress());
+		app.use(express.logger(env && env == 'production' ? null : 'dev'));
 		app.use(express.cookieParser());
-		app.use(express.cookieSession({ secret: "yHCoyEPZ9WsNDORGb9SDDMNn0OOMcCgQiW5q8VFhDHJiztvvVVCPkZQWUAXl" }));
-		app.use(express.favicon("./images/favicon.ico"));
+		app.use(express.cookieSession({ secret: 'yHCoyEPZ9WsNDORGb9SDDMNn0OOMcCgQiW5q8VFhDHJiztvvVVCPkZQWUAXl' }));
+		app.use(express.favicon('./images/favicon.ico'));
 		app.use(app.router);
 
 		app.use(stylus.middleware({
-			src: ".",
+			src: '.',
 			compile: compile,
 			compress: true
 		}));
 
-		app.use("/src", express["static"]("./src"));
-		app.use("/lib", express["static"]("./lib"), { maxAge: 86400000 });
-		app.use("/css", express["static"]("./css"), { maxAge: 86400000 });
-		app.use("/images", express["static"]("./images"), { maxAge: 86400000 });
-		app.use("/static", express["static"]("./static"), { maxAge: 86400000 });
-		
-		app.use("/500", function(request, response, next){
-			next(new Error("All your base are belong to us!"));
+		app.use('/src', express['static']('./src'));
+		app.use('/lib', express['static']('./lib'), { maxAge: 86400000 });
+		app.use('/css', express['static']('./css'), { maxAge: 86400000 });
+		app.use('/images', express['static']('./images'), { maxAge: 86400000 });
+		app.use('/photos/full', express['static']('./photos'), { maxAge: 86400000 });
+		app.use('/static', express['static']('./static'), { maxAge: 86400000 });
+
+		app.use('/500', function(request, response, next){
+			next(new Error('All your base are belong to us!'));
 		});
 
 		app.use(function(request, response, next){
@@ -65,7 +68,7 @@ define([
 
 			response.type('txt').send('Not Found');
 		});
-		
+
 		app.use(function(error, request, response, next){
 			response.status(error.status || 500);
 			response.render('500', {
@@ -93,22 +96,79 @@ define([
 		});
 	});
 
-	app.get("/content/:view", function(request, response, next){
-		response.render("content/" + request.params.view);
+	app.get('/photos', function (request, response, next) {
+		response.render('photos', {
+			root: root
+		});
 	});
 
-	app.get("/page/:page", function(request, response, next){
+	function resize(image) {
+
+		var parts = image.split('.'),
+			ext = parts.pop();
+		parts.push('thumb');
+		parts.push(ext);
+		var thumb = parts.join('.');
+		return dfs.exists(thumb).then(function (exists) {
+			var dfd = new Deferred();
+
+			function writeFile(err) {
+				if (err) {
+					dfd.reject(err);
+					return;
+				}
+				dfd.resolve(thumb);
+			}
+
+			if (exists) {
+				dfd.resolve(thumb);
+			}
+			else {
+				gm(image).
+					size(function (err, size) {
+						if (err) {
+							dfd.reject(err);
+							return;
+						}
+						if (size.width > size.height) {
+							gm(image).
+								resize(333, 222).
+								write(thumb, writeFile);
+						}
+						else {
+							gm(image).
+								resize(222, 333).
+								noProfile().
+								write(thumb, writeFile);
+						}
+					});
+			}
+			return dfd.promise;
+		});
+	}
+
+	app.get('/photos/thumb/:image', function (request, response, next) {
+		resize('photos/' + request.params.image).then(function (filename) {
+			response.sendfile(filename);
+		});
+	});
+
+	app.get('/content/:view', function(request, response, next){
+		response.render('content/' + request.params.view);
+	});
+
+	app.get('/page/:page', function(request, response, next){
 		var d = new Deferred();
-		jade.renderFile("views/content/" + request.params.page + ".jade", {}, function(err, page){
+		jade.renderFile('views/content/' + request.params.page + '.jade', {}, function(err, page){
 			if(err){
 				d.reject(err);
 			}else{
 				d.resolve(page);
 			}
 		});
-		if(request.params.page == "cv"){
+		if(request.params.page == 'cv'){
 			var d2 = new Deferred();
-			jade.renderFile("views/content/cv_nav.jade", {}, function(err, page){
+			jade.renderFile('views/content/cv_nav.jade', {}, function(err, page){
 				if(err){
 					d2.reject(err);
 				}else{
@@ -119,7 +179,7 @@ define([
 		}
 		d.then(function(page){
 			var result = {
-				title: "Kitson P. Kelly"
+				title: 'Kitson P. Kelly'
 			};
 			if(page instanceof Array){
 				result.content = page[0];
@@ -128,17 +188,17 @@ define([
 				result.content = page;
 			}
 			switch(request.params.page){
-				case "home":
+				case 'home':
 					result.connectItems = true;
-					result.subtitle = "presence on the interwebs";
+					result.subtitle = 'presence on the interwebs';
 					break;
-				case "dojo":
+				case 'dojo':
 					result.connectItems = false;
-					result.subtitle = "dojo toolkit";
+					result.subtitle = 'dojo toolkit';
 					break;
-				case "cv":
+				case 'cv':
 					result.connectItems = false;
-					result.subtitle = "curriculum vitae/résumé";
+					result.subtitle = 'curriculum vitae/résumé';
 			}
 			response.json(result);
 		}, function(err){

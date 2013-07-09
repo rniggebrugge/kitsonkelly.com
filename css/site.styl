@@ -16,6 +16,7 @@ theme-orange-hover = #a36656
 
 header-font = 'Averia Libre', cursive
 text-font = 'Lato', sans-serif
+handwriting-font = 'Permanent Marker', cursive
 
 body
   background theme-paper
@@ -23,6 +24,33 @@ body
   font-family text-font
   margin 0
   padding 0
+  .main
+    .photos
+      margin 0 auto
+      text-align center
+      a
+        vertical-align middle
+        display inline-block
+        padding 0.75em
+        margin 0.75em 0.75em 0.65em
+        box-shadow 5px 5px 20px theme-blue
+        background-color white
+        text-decoration none
+        font-family handwriting-font
+        color black
+        font-weight normal
+        font-size 18px
+      .r-left
+        transform rotate(-2deg) scale(1)
+        &:hover
+          transform rotate(1deg) scale(1)
+      .r-right
+        transform rotate(2deg) scale(1)
+        &:hover
+          transform rotate(-1deg) scale(1)
+      img
+        display block
+        margin-bottom 6px
   &.blue
     color theme-blue
     hr
@@ -208,14 +236,14 @@ pre
 
 .right
   float right
-  margin 0 2em 1em 1em
+  margin 0 5em 1em 1em
   padding 1px
-  width 250px
+  width 15em
   text-align center
   h1
     font-size 1.2em
     margin 2px 0
-    padding 0 3px 0
+    padding 3px
   > ul
     list-style none
     margin 0
@@ -234,7 +262,7 @@ pre
           transition-duration 0.2s
 
 .left
-  margin 1em 324px 1em 2em
+  margin 1em 23em 1em 5em
   padding 1em
 
 .left
@@ -248,7 +276,7 @@ pre
       transition-duration 0.2s
 
 .main
-  margin 2em
+  margin 2em 5em 2em
   padding 1em
 
 .cv

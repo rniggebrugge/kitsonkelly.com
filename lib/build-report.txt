@@ -1,8 +1,8 @@
-Build started: Wed Jun 05 2013 15:52:45 GMT+0100 (BST)
+Build started: Mon Jul 08 2013 14:24:20 GMT+0100 (BST)
 Build application version: 1.7.0dev (23930)
 Messages:
 info(103) Optimizing module complete.
-	/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js (compile time:13.123s)
+	/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js (compile time:2.887s)
 info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dojo/_firebug/firebug.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dojo/resources/dnd.css
@@ -160,8 +160,8 @@ info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/layout/TabContainer.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/layout/TabContainer_rtl.css
 info(107) Package Version:
-	package: dojo; version: 1.9.0
-	package: dijit; version: 1.9.0
+	package: dojo; version: 1.9.1
+	package: dijit; version: 1.9.1
 	package: kitsonkelly-client; version: 1.0.0
 warn(216) dojo/has plugin resource could not be resolved during build-time.
 	plugin resource id: dom-addeventlistener?:./aspect; reference module id: dojo/on
@@ -180,98 +180,8 @@ Layer Contents:
 dojo/dojo:
 	dojo/dojo
 	kitsonkelly-client/main
-	dojo/_base/array
-	dojo/_base/kernel
-	dojo/has
-	dojo/_base/config
-	dojo/_base/lang
-	dojo/sniff
-	dojo/dom
-	dojo/_base/window
-	dojo/dom-construct
-	dojo/dom-attr
-	dojo/dom-style
-	dojo/dom-prop
-	dojo/_base/connect
-	dojo/on
-	dojo/topic
-	dojo/Evented
-	dojo/aspect
-	dojo/_base/event
-	dojo/dom-geometry
-	dojo/mouse
-	dojo/_base/sniff
-	dojo/keys
-	dojo/ready
 	dojo/domReady
-	dojo/request
-	dojo/request/default
-	dojo/router
-	dojo/router/RouterBase
-	dojo/_base/declare
-	dojo/hash
-	dijit/Tooltip
-	dojo/_base/fx
-	dojo/_base/Color
-	dojo/dom-class
-	dijit/_base/manager
-	dijit/registry
-	dijit/main
-	dijit/place
-	dijit/Viewport
-	dojo/window
-	dijit/_Widget
-	dojo/query
-	dojo/selector/_loader
-	dojo/selector/lite
-	dijit/_WidgetBase
-	dojo/Stateful
-	dojo/when
-	dojo/Deferred
-	dojo/errors/CancelError
-	dojo/errors/create
-	dojo/promise/Promise
-	dojo/promise/instrumentation
-	dojo/promise/tracer
-	dijit/Destroyable
-	dijit/_OnDijitClickMixin
-	dijit/a11yclick
-	dojo/touch
-	dijit/_FocusMixin
-	dijit/focus
-	dijit/a11y
-	dojo/uacss
-	dijit/hccss
-	dojo/hccss
-	dijit/_TemplatedMixin
-	dojo/cache
-	dojo/text
-	dojo/string
-	dijit/_AttachMixin
-	dijit/BackgroundIframe
-	dijit/templates/Tooltip.html
-	kitsonkelly-client/LastFMPager
-	dijit/layout/StackContainer
-	dojo/cookie
-	dojo/regexp
-	dijit/layout/_LayoutWidget
-	dijit/_Container
-	dijit/_Contained
-	dojo/i18n
-	dojo/_base/xhr
-	dojo/io-query
-	dojo/dom-form
-	dojo/json
-	dojo/_base/Deferred
-	dojo/_base/json
-	dojo/request/watch
-	dojo/request/util
-	dojo/errors/RequestError
-	dojo/errors/RequestTimeoutError
-	dojo/request/xhr
-	dojo/request/handlers
-	dijit/nls/common
-	kitsonkelly-client/resources/_LastFMPane.html
+	dojo/has
 
 Optimizer Messages:
 /Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:
@@ -423,67 +333,15 @@ dojo.js.uncompressed.js:1923: WARNING - unreachable code
 	if(! 1 ){
 	        ^
 
-dojo.js.uncompressed.js:2560: WARNING - unreachable code
-	if( 0 ){
-	       ^
-
-dojo.js.uncompressed.js:2603: WARNING - unreachable code
-	if( 0 ){
-	       ^
-
-dojo.js.uncompressed.js:2742: WARNING - unreachable code
+dojo.js.uncompressed.js:2108: WARNING - unreachable code
 	if(! 1 ){
 	        ^
 
-dojo.js.uncompressed.js:3070: WARNING - unreachable code
-	}else{
-	     ^
-
-dojo.js.uncompressed.js:5327: WARNING - unreachable code
-	if( 0 ){
-	       ^
-
-dojo.js.uncompressed.js:6720: WARNING - unreachable code
-		if( 0 ){
-		       ^
-
-dojo.js.uncompressed.js:7268: WARNING - unreachable code
-	if(! 1 ){
-	        ^
-
-dojo.js.uncompressed.js:7568: WARNING - unreachable code
-	if( 0  && dojo.config.parseOnLoad && !dojo.isAsync){
-	                                                   ^
-
-dojo.js.uncompressed.js:7809: WARNING - unreachable code
-	}else if( 0 ){
-	      ^
-
-dojo.js.uncompressed.js:12671: WARNING - unreachable code
-if( 0 ){
-       ^
-
-dojo.js.uncompressed.js:13765: WARNING - unreachable code
-	if( 0 ){
-	       ^
-
-dojo.js.uncompressed.js:17492: WARNING - unreachable code
-	}else{
-	     ^
-
-dojo.js.uncompressed.js:18271: WARNING - unreachable code
-	if( 0 ){
-	       ^
-
-dojo.js.uncompressed.js:21700: WARNING - unreachable code
-		if(! 1 ){ return; }
-		        ^
-
-0 error(s), 51 warning(s)
-Done (compile time:13.123s)
+0 error(s), 38 warning(s)
+Done (compile time:2.887s)
 
 
 Process finished normally
 	errors: 0
 	warnings: 11
-	build time: 78.69 seconds
+	build time: 68.276 seconds
