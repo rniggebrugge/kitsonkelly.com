@@ -7,3 +7,6 @@
 [submodule "src/setten"]
 	path = src/setten
 	url = https://github.com/kitsonk/setten.git
+[submodule "src/core"]
+	path = src/core
+	url = git@github.com:kitsonk/core.git
