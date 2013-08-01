@@ -28,11 +28,10 @@ define([
 		app.set('view engine', 'jade');
 		app.set('views', 'views');
 		app.use(express.compress());
-		app.use(express.logger(env && env == 'production' ? null : 'dev'));
+		app.use(express.logger(env === 'production' ? null : 'dev'));
 		app.use(express.cookieParser());
 		app.use(express.cookieSession({ secret: 'yHCoyEPZ9WsNDORGb9SDDMNn0OOMcCgQiW5q8VFhDHJiztvvVVCPkZQWUAXl' }));
 		app.use(express.favicon('./images/favicon.ico'));
-		app.use(app.router);
 
 		app.use(stylus.middleware({
 			src: '.',
@@ -41,11 +40,13 @@ define([
 		}));
 
 		app.use('/src', express['static']('./src'));
-		app.use('/lib', express['static']('./lib'), { maxAge: 86400000 });
-		app.use('/css', express['static']('./css'), { maxAge: 86400000 });
-		app.use('/images', express['static']('./images'), { maxAge: 86400000 });
-		app.use('/photos/full', express['static']('./photos'), { maxAge: 86400000 });
-		app.use('/static', express['static']('./static'), { maxAge: 86400000 });
+		app.use('/lib', express['static']('./lib', { maxAge: 86400000 }));
+		app.use('/css', express['static']('./css', { maxAge: 86400000 }));
+		app.use('/images', express['static']('./images', { maxAge: 86400000 }));
+		app.use('/photos/full', express['static']('./photos', { maxAge: 86400000 }));
+		app.use('/static', express['static']('./static', { maxAge: 86400000 }));
+
+		app.use(app.router);
 
 		app.use('/500', function(request, response, next){
 			next(new Error('All your base are belong to us!'));
