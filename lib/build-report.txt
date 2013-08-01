@@ -1,8 +1,8 @@
-Build started: Mon Jul 08 2013 14:24:20 GMT+0100 (BST)
+Build started: Thu Aug 01 2013 09:08:49 GMT+0100 (BST)
 Build application version: 1.7.0dev (23930)
 Messages:
 info(103) Optimizing module complete.
-	/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js (compile time:2.887s)
+	/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js (compile time:5.46s)
 info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dojo/_firebug/firebug.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dojo/resources/dnd.css
@@ -162,6 +162,7 @@ info(106) Optimizing CSS.
 info(107) Package Version:
 	package: dojo; version: 1.9.1
 	package: dijit; version: 1.9.1
+	package: core; version: 0.0.3
 	package: kitsonkelly-client; version: 1.0.0
 warn(216) dojo/has plugin resource could not be resolved during build-time.
 	plugin resource id: dom-addeventlistener?:./aspect; reference module id: dojo/on
@@ -176,12 +177,25 @@ warn(224) A plugin dependency was encountered but there was no build-time plugin
 	module: dojo/request/registry; plugin: dojo/request/default
 	module: dijit/Fieldset; plugin: dojo/query
 	module: dijit/Tree; plugin: dojo/query
+	module: core/Deferred; plugin: core/has
+	module: core/on; plugin: core/has
+	module: core/request; plugin: core/request/default
+	module: core/request/registry; plugin: core/request/default
 Layer Contents:
 dojo/dojo:
 	dojo/dojo
 	kitsonkelly-client/main
+	core/dom
+	core/doc
+	core/compose
+	core/lang
+	core/properties
+	core/has
+	core/on
+	core/sniff
 	dojo/domReady
 	dojo/has
+	core/aspect
 
 Optimizer Messages:
 /Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:
@@ -333,15 +347,19 @@ dojo.js.uncompressed.js:1923: WARNING - unreachable code
 	if(! 1 ){
 	        ^
 
-dojo.js.uncompressed.js:2108: WARNING - unreachable code
+dojo.js.uncompressed.js:2613: WARNING - unreachable code
+	else {
+	     ^
+
+dojo.js.uncompressed.js:4765: WARNING - unreachable code
 	if(! 1 ){
 	        ^
 
-0 error(s), 38 warning(s)
-Done (compile time:2.887s)
+0 error(s), 39 warning(s)
+Done (compile time:5.46s)
 
 
 Process finished normally
 	errors: 0
-	warnings: 11
-	build time: 68.276 seconds
+	warnings: 15
+	build time: 71.488 seconds

@@ -12,7 +12,7 @@ theme-orange-link = #8c5d3a
 theme-orange-hover = #ae8d71
 theme-red = #924838
 theme-red-link = #893a2a
-theme-orange-hover = #a36656
+theme-red-hover = #a36656
 
 header-font = 'Averia Libre', cursive
 text-font = 'Lato', sans-serif
@@ -43,12 +43,13 @@ body
       .r-left
         transform rotate(-2deg) scale(1)
         &:hover
-          transform rotate(1deg) scale(1)
+          transform rotate(0) scale(1.1)
       .r-right
         transform rotate(2deg) scale(1)
         &:hover
-          transform rotate(-1deg) scale(1)
+          transform rotate(0) scale(1.1)
       img
+        border none
         display block
         margin-bottom 6px
   &.blue
@@ -302,6 +303,59 @@ pre
   .other
     font-size 14px
     margin-top 1em
+
+.photo-viewer
+  width auto
+  height auto
+  position fixed
+  overflow hidden
+  left 0
+  top 0
+  bottom 0
+  right 0
+  padding 1em
+  z-index 999
+  text-align center
+  background rgba(theme-blue, 0.25)
+  .title
+    position relative
+    margin 40px auto 0px auto
+  a.close
+    position absolute
+    top 0
+    right 0
+    margin 1em
+    z-index 1001
+    font-size 24px
+    text-decoration none
+    text-shadow 0 0 6px rgba(black, 1)
+    padding 3px 6px
+    background rgba(theme-blue, 0.3)
+    border 2px solid theme-blue
+  img
+    max-height 100%
+    max-width 100%
+    opacity 1
+    transition opacity 0.5s linear
+    box-shadow 0 0 24px rgba(black, 0.7)
+    animation fadeInScale 1.2s ease-in-out
+.hidden
+  display none
+
+@keyframes fadeInScale
+  0%
+    transform scale(0.6)
+    opacity 0
+  100%
+    transform scale(1)
+    opacity 1
+
+body.blue .main a.close
+  color white
+  &:hover
+    color theme-blue-hover
+    border 2px solid rgba(black, 0)
+    background none
 
 .footer
   clear both

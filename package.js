@@ -15,6 +15,9 @@ var profile = (function () {
 			name: 'dijit',
 			location: 'dijit'
 		},{
+			name: 'core',
+			location: 'core'
+		},{
 			name: 'kitsonkelly-client',
 			location: 'kitsonkelly-client'
 		}],
@@ -50,7 +53,7 @@ var profile = (function () {
 
 		layers: {
 			'dojo/dojo': {
-				include: [ 'dojo/dojo', 'kitsonkelly-client/main' ],
+				include: [ 'dojo/dojo', 'kitsonkelly-client/main', 'core/aspect' ],
 				customBase: 1,
 				boot: 1
 			}
