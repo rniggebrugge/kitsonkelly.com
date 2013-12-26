@@ -1,4 +1,4 @@
-doctype 5
+doctype html
 html
   head
     block head
@@ -9,7 +9,7 @@ html
       link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Averia+Libre:400,700|Permanent+Marker')
       link(rel='stylesheet', type='text/css', href='/css/site.css', media='all')
     block scripts
-      script(type="text/javascript")
+      script(type="text/javascript").
         dojoConfig = {
           async: 1,
           baseUrl: "#{root}/",
@@ -47,7 +47,7 @@ html
       block content
     .footer
       .copy Copyright &copy; 2013 &ndash; All Rights Reserved
-    script(type="text/javascript")
+    script(type="text/javascript").
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

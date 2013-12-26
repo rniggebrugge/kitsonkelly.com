@@ -1,8 +1,8 @@
-Build started: Thu Aug 01 2013 09:08:49 GMT+0100 (BST)
-Build application version: 1.7.0dev (23930)
+Build started: Thu Dec 26 2013 19:49:25 GMT+0000 (GMT)
+Build application version: 1.10.0-pre (NaN)
 Messages:
 info(103) Optimizing module complete.
-	/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js (compile time:5.46s)
+	/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js (compile time:4.092s)
 info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dojo/_firebug/firebug.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dojo/resources/dnd.css
@@ -27,7 +27,6 @@ info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/ProgressBar.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/ProgressBar_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/TimePicker.css
-	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/TimePicker_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/TitlePane.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/TitlePane_rtl.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/claro/Toolbar.css
@@ -160,8 +159,8 @@ info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/layout/TabContainer.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/layout/TabContainer_rtl.css
 info(107) Package Version:
-	package: dojo; version: 1.9.1
-	package: dijit; version: 1.9.1
+	package: dojo; version: 1.9.2
+	package: dijit; version: 1.9.2
 	package: core; version: 0.0.3
 	package: kitsonkelly-client; version: 1.0.0
 warn(216) dojo/has plugin resource could not be resolved during build-time.
@@ -181,6 +180,19 @@ warn(224) A plugin dependency was encountered but there was no build-time plugin
 	module: core/on; plugin: core/has
 	module: core/request; plugin: core/request/default
 	module: core/request/registry; plugin: core/request/default
+error(307) Failed to evaluate module tagged as pure AMD (fell back to processing with regular expressions).
+	module: core/third_party/Promises/polyfill/tests/Promise-tests; error: ReferenceError: doh is not defined
+	module: core/third_party/Promises/polyfill/tests/promises-tests; error: TypeError: Cannot call method 'readFileSync' of undefined
+	module: core/third_party/Promises/polyfill/tests/test; error: TypeError: undefined is not a function
+	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/cli; error: SyntaxError: Unexpected token ILLEGAL
+	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/programmaticRunner; error: ReferenceError: __dirname is not defined
+	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/tests/3.2.1; error: TypeError: Cannot read property 'fulfilled' of undefined
+	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/tests/3.2.2; error: TypeError: Cannot read property 'testFulfilled' of undefined
+	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/tests/3.2.3; error: TypeError: Cannot read property 'testFulfilled' of undefined
+	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/tests/3.2.4; error: TypeError: Cannot read property 'testFulfilled' of undefined
+	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/tests/3.2.5; error: TypeError: Cannot read property 'testFulfilled' of undefined
+	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/tests/3.2.6; error: TypeError: Cannot read property 'testFulfilled' of undefined
+	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/tests/helpers/testThreeCases; error: TypeError: Cannot read property 'fulfilled' of undefined
 Layer Contents:
 dojo/dojo:
 	dojo/dojo
@@ -356,10 +368,10 @@ dojo.js.uncompressed.js:4765: WARNING - unreachable code
 	        ^
 
 0 error(s), 39 warning(s)
-Done (compile time:5.46s)
+Done (compile time:4.092s)
 
 
 Process finished normally
-	errors: 0
+	errors: 12
 	warnings: 15
-	build time: 71.488 seconds
+	build time: 68.3 seconds
