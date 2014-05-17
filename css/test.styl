@@ -1,0 +1,33 @@
+@import "nib"
+
+body-bg = #fafbfb
+main-bg = #1875bb
+main-color = #fafbfb
+head-color = #1b78c1
+
+body
+  font-family 'Exo 2', sans-serif
+  background body-bg
+  margin 0
+  padding 0
+
+.head
+  padding 0 1em 0
+  > p
+    font-weight bold
+    font-size 1.6em
+    color head-color
+  > ul
+    list-style none outside none
+    margin 0
+    padding 0
+    font-size 1.2em
+    float right
+    > li
+      display inline-block
+      padding 0 0.2em 0
+
+
+.main
+  background main-bg
+  color main-color

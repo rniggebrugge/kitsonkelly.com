@@ -1,5 +1,11 @@
 define([
 	'dojo/node!express',
+	'dojo/node!compression',
+	'dojo/node!morgan',
+	'dojo/node!cookie-parser',
+	'dojo/node!cookie-session',
+	'dojo/node!serve-favicon',
+	'dojo/node!serve-static',
 	'dojo/node!jade',
 	'dojo/node!stylus',
 	'dojo/node!nib',
@@ -8,7 +14,8 @@ define([
 	'dojo/Deferred',
 	'dojo/promise/all',
 	'setten/dfs'
-], function(express, jade, stylus, nib, colors, gm, Deferred, all, dfs){
+], function(express, compress, morgan, cookieParser, cookieSession, favicon, serveStatic, jade, stylus, nib, colors,
+		gm, Deferred, all, dfs){
 
 	/* Setup Express Server */
 	var app = express(),
@@ -23,61 +30,26 @@ define([
 			use(nib());
 	}
 
-	app.configure(function(){
-		app.locals.pretty = true;
-		app.set('view engine', 'jade');
-		app.set('views', 'views');
-		app.use(express.compress());
-		app.use(express.logger(env === 'production' ? null : 'dev'));
-		app.use(express.cookieParser());
-		app.use(express.cookieSession({ secret: 'yHCoyEPZ9WsNDORGb9SDDMNn0OOMcCgQiW5q8VFhDHJiztvvVVCPkZQWUAXl' }));
-		app.use(express.favicon('./images/favicon.ico'));
+	app.set('view engine', 'jade');
+	app.set('views', 'views');
+	app.use(compress());
+	app.use(morgan(env === 'production' ? null : 'dev'));
+	app.use(cookieParser());
+	app.use(cookieSession({ secret: 'yHCoyEPZ9WsNDORGb9SDDMNn0OOMcCgQiW5q8VFhDHJiztvvVVCPkZQWUAXl' }));
+	app.use(favicon('./images/favicon.ico'));
 
-		app.use(stylus.middleware({
-			src: '.',
-			compile: compile,
-			compress: true
-		}));
+	app.use(stylus.middleware({
+		src: '.',
+		compile: compile,
+		compress: true
+	}));
 
-		app.use('/src', express['static']('./src'));
-		app.use('/lib', express['static']('./lib', { maxAge: 86400000 }));
-		app.use('/css', express['static']('./css', { maxAge: 86400000 }));
-		app.use('/images', express['static']('./images', { maxAge: 86400000 }));
-		app.use('/photos/full', express['static']('./photos', { maxAge: 86400000 }));
-		app.use('/static', express['static']('./static', { maxAge: 86400000 }));
-
-		app.use(app.router);
-
-		app.use('/500', function(request, response, next){
-			next(new Error('All your base are belong to us!'));
-		});
-
-		app.use(function(request, response, next){
-			if(request.accepts('html')){
-				response.status(404);
-				response.render('404', {
-					url: request.url,
-					root: root
-				});
-				return;
-			}
-
-			if(request.accepts('json')){
-				response.send({ error: 'Not Found' });
-				return;
-			}
-
-			response.type('txt').send('Not Found');
-		});
-
-		app.use(function(error, request, response, next){
-			response.status(error.status || 500);
-			response.render('500', {
-				error: error,
-				root: root
-			});
-		});
-	});
+	app.use('/src', serveStatic('./src'));
+	app.use('/lib', serveStatic('./lib', { maxAge: 86400000 }));
+	app.use('/css', serveStatic('./css', { maxAge: 86400000 }));
+	app.use('/images', serveStatic('./images', { maxAge: 86400000 }));
+	app.use('/photos/full', serveStatic('./photos', { maxAge: 86400000 }));
+	app.use('/static', serveStatic('./static', { maxAge: 86400000 }));
 
 	app.get('/', function(request, response, next){
 		response.render('index', {
@@ -234,9 +206,35 @@ define([
 	});
 
 	app.get('/500', function(request, response, next){
-		// TODO: Handle different response encodings (html/json)
 		next(new Error('All your base are belong to us!'));
 	});
+
+	app.use(function(request, response, next){
+		if(request.accepts('html')){
+			response.status(404);
+			response.render('404', {
+				url: request.url,
+				root: root
+			});
+			return;
+		}
+
+		if(request.accepts('json')){
+			response.send({ error: 'Not Found' });
+			return;
+		}
+
+		response.type('txt').send('Not Found');
+	});
+
+	app.use(function(error, request, response, next){
+		response.status(error.status || 500);
+		response.render('500', {
+			error: error,
+			root: root
+		});
+	});
+
 
 	app.listen(appPort);
 

@@ -1,0 +1,60 @@
+doctype html
+html
+  head
+    title Test Layout
+    link(rel='stylesheet', type='text/css', href='//fonts.googleapis.com/css?family=Exo+2:400,700')
+    link(rel='stylesheet', type='text/css', href='/css/test.css', media='all')
+    script(type="text/javascript").
+      dojoConfig = {
+        async: 1,
+        baseUrl: "#{root}/",
+        packages: [{
+            name: "dojo",
+            location: "dojo"
+          },{
+            name: "dijit",
+            location: "dijit"
+          },{
+            name: 'core',
+            location: 'core'
+          },{
+            name: "kitsonkelly-client",
+            location: "kitsonkelly-client"
+          }],
+        deps: ["kitsonkelly-client/main"]
+      };
+  body
+    .head
+      ul
+        li home
+        li cv/r&eacute;sum&eacute;
+        li code
+        li photos
+        li blog
+      p Kitson P. Kelly
+    .main
+      .right
+        h1 Interact
+        ul
+          li @kitsonk
+          li +Kitson
+          li facebook.com/kitsonk
+          li linkedin.com/in/kitsonk
+          li github.com/kitsonk
+          li geekli.st/kitsonk
+          li last.fm/user/kitsonk
+          li blog
+      .left
+        p.
+          You have landed on my personal website.  What brought you here today is likely a bit of a mystery to me,
+          but since you are here, you might as well have a nose around.  Mostly this website is my excuse to mess
+          around with things.  Try my hand at a bit of web design and engineering.
+        p.
+          From a hobbyist perspective I am quite proud of my little website, since I have written it from “scratch”
+          including the web server that it is running on.  Actually, I have combined together several pieces of
+          technology to bring you this website, including <a href="http://nodejs.org/" target="_blank">NodeJS</a>,
+          <a href="http://dojotoolkit.org/" target="_blank">Dojo Toolkit</a>, <a href="http://jade-lang.com/"
+          target="_blank">Jade</a>, <a href="http://expressjs.com">Express</a>,
+          <a href="http://learnboost.github.io/stylus/">Stylus</a> and some of my own projects.
+    .foot
+    script(type="text/javascript", src='#{root}/dojo/dojo.js')
