@@ -1,0 +1,365 @@
+@import "nib"
+
+theme-paper = #e9dbc9
+theme-blue = #545f64
+theme-blue-link = #3a4854
+theme-blue-hover = #7d8280
+theme-green = #566456
+theme-green-link = #1a201d
+theme-green-hover = #7c8373
+theme-orange = #966b4b
+theme-orange-link = #8c5d3a
+theme-orange-hover = #ae8d71
+theme-red = #924838
+theme-red-link = #893a2a
+theme-red-hover = #a36656
+
+header-font = 'Averia Libre', cursive
+text-font = 'Lato', sans-serif
+handwriting-font = 'Permanent Marker', cursive
+
+body
+  background theme-paper
+  image '/images/background.png'
+  font-family text-font
+  margin 0
+  padding 0
+  .main
+    .photos
+      margin 0 auto
+      text-align center
+      a
+        vertical-align middle
+        display inline-block
+        padding 0.75em
+        margin 0.75em 0.75em 0.65em
+        box-shadow 5px 5px 20px theme-blue
+        background-color white
+        text-decoration none
+        font-family handwriting-font
+        color black
+        font-weight normal
+        font-size 18px
+      .r-left
+        transform rotate(-2deg) scale(1)
+        &:hover
+          transform rotate(0) scale(1.1)
+      .r-right
+        transform rotate(2deg) scale(1)
+        &:hover
+          transform rotate(0) scale(1.1)
+      img
+        border none
+        display block
+        margin-bottom 6px
+  &.blue
+    color theme-blue
+    hr
+      background linear-gradient(left center, rgba(theme-blue, 0) 0%, rgba(theme-blue, 1) 10%, rgba(theme-blue, 1) 90%, rgba(theme-blue, 0) 100%)
+    pre
+      background-color theme-blue
+    .header
+      background-color theme-blue
+      > ul > li a:hover
+        color theme-blue
+    .content
+      border-top 2px solid theme-blue
+    .right
+      border 2px solid theme-blue
+      h1
+        border-bottom 2px solid theme-blue
+      ul > li a
+        background-color theme-blue
+        &:hover
+          color theme-blue
+          background-color theme-paper
+    .left
+      border 6px double theme-blue
+    .left
+    .main
+      a
+        color theme-blue-link
+        &:hover
+          color theme-blue-hover
+    .main
+      border 6px double theme-blue
+    .footer
+      border-top 3px solid theme-blue
+  &.green
+    color theme-green
+    hr
+      background linear-gradient(left center, rgba(theme-green, 0) 0%, rgba(theme-green, 1) 10%, rgba(theme-green, 1) 90%, rgba(theme-green, 0) 100%)
+    pre
+      background-color theme-green
+    .header
+      background-color theme-green
+      > ul > li a:hover
+        color theme-green
+    .content
+      border-top 2px solid theme-green
+    .right
+      border 2px solid theme-green
+      h1
+        border-bottom 2px solid theme-green
+      ul > li a
+        background-color theme-green
+        &:hover
+          color theme-green
+          background-color theme-paper
+    .left
+      border 6px double theme-green
+    .left
+    .main
+      a
+        color theme-green-link
+        &:hover
+          color theme-green-hover
+    .main
+      border 6px double theme-green
+    .footer
+      border-top 3px solid theme-green
+  &.orange
+    color theme-orange
+    hr
+      background linear-gradient(left center, rgba(theme-orange, 0) 0%, rgba(theme-orange, 1) 10%, rgba(theme-orange, 1) 90%, rgba(theme-orange, 0) 100%)
+    pre
+      background-color theme-orange
+    .header
+      background-color theme-orange
+      > ul > li a:hover
+        color theme-orange
+    .content
+      border-top 2px solid theme-orange
+    .right
+      border 2px solid theme-orange
+      h1
+        border-bottom 2px solid theme-orange
+      ul > li a
+        background-color theme-orange
+        &:hover
+          color theme-orange
+          background-color theme-paper
+    .left
+      border 6px double theme-orange
+    .left
+    .main
+      a
+        color theme-orange-link
+        &:hover
+          color theme-orange-hover
+    .main
+      border 6px double theme-orange
+    .footer
+      border-top 3px solid theme-orange
+  &.red
+    color theme-red
+    hr
+      background linear-gradient(left center, rgba(theme-red, 0) 0%, rgba(theme-red, 1) 10%, rgba(theme-red, 1) 90%, rgba(theme-red, 0) 100%)
+    pre
+      background-color theme-red
+    .header
+      background-color theme-red
+      > ul > li a:hover
+        color theme-red
+    .content
+      border-top 2px solid theme-red
+    .right
+      border 2px solid theme-red
+      h1
+        border-bottom 2px solid theme-red
+      ul > li a
+        background-color theme-red
+        &:hover
+          color theme-red
+          background-color theme-paper
+    .left
+      border 6px double theme-red
+    .left
+    .main
+      a
+        color theme-red-link
+        &:hover
+          color theme-red-hover
+    .main
+      border 6px double theme-red
+    .footer
+      border-top 3px solid theme-red
+
+a
+  text-decoration none
+
+hr
+  clear both
+  float none
+  width 65%
+  height 2px
+  border none
+
+h1
+h2
+h3
+h4
+h5
+h6
+  text-align center
+  font-family header-font
+
+pre
+  margin 1em
+  padding 1em
+  color theme-paper
+
+.header
+  font-family header-font
+  text-align center
+  > ul
+    list-style none outside none
+    margin 0
+    padding 0
+    font-size 1.3em
+    > li
+      display inline-block
+      padding 0
+      a
+        color theme-paper
+        display inline-block
+        margin 0
+        padding 0.5em
+        transition-duration 0.1s
+        &:hover
+          transition-duration 0.2s
+          background-color theme-paper
+
+.content
+  margin-top 2px
+  h2
+    margin-bottom 2em
+
+.right
+  float right
+  margin 0 5em 1em 1em
+  padding 1px
+  width 15em
+  text-align center
+  h1
+    font-size 1.2em
+    margin 2px 0
+    padding 3px
+  > ul
+    list-style none
+    margin 0
+    padding 0
+    > li
+      padding 0
+      margin 0
+      a
+        color theme-paper
+        display block
+        padding 0.7em
+        transition-duration 0.1s
+        &:hover
+          font-weight bold
+          background-color theme-paper
+          transition-duration 0.2s
+
+.left
+  margin 1em 23em 1em 5em
+  padding 1em
+
+.left
+.main
+  a
+    text-decoration underline
+    font-weight bold
+    transition-duration 0.2s
+    &:hover
+      text-decoration none
+      transition-duration 0.2s
+
+.main
+  margin 2em 5em 2em
+  padding 1em
+
+.cv
+  line-height 1.3em
+  td
+    vertical-align top
+  .intro .fcol
+    width 150px
+  .intro 
+    td:first-child
+      font-weight bold
+    td.summary:first-child
+      font-weight normal
+      padding-bottom 1em
+  .lead
+    font-weight bold
+  .desc
+    padding-bottom 1em
+  .timeframe
+    text-align right
+  .edu
+    width 100%
+  .other
+    font-size 14px
+    margin-top 1em
+
+.photo-viewer
+  width auto
+  height auto
+  position fixed
+  overflow hidden
+  left 0
+  top 0
+  bottom 0
+  right 0
+  padding 1em
+  z-index 999
+  text-align center
+  background rgba(theme-blue, 0.25)
+  .title
+    position relative
+    margin 40px auto 0px auto
+  a.close
+    position absolute
+    top 0
+    right 0
+    margin 1em
+    z-index 1001
+    font-size 24px
+    text-decoration none
+    text-shadow 0 0 6px rgba(black, 1)
+    padding 3px 6px
+    background rgba(theme-blue, 0.3)
+    border 2px solid theme-blue
+  img
+    max-height 100%
+    max-width 100%
+    opacity 1
+    transition opacity 0.5s linear
+    box-shadow 0 0 24px rgba(black, 0.7)
+    animation fadeInScale 1.2s ease-in-out
+.hidden
+  display none
+
+@keyframes fadeInScale
+  0%
+    transform scale(0.6)
+    opacity 0
+  100%
+    transform scale(1)
+    opacity 1
+
+body.blue .main a.close
+  color white
+  &:hover
+    color theme-blue-hover
+    border 2px solid rgba(black, 0)
+    background none
+
+.footer
+  clear both
+  text-align center
+  margin-top 2em
+  padding 1em
+  font-size 0.75em
