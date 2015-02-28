@@ -4,34 +4,22 @@
  */
 
 // Initial Module to Load
-var initModule = "kitsonkelly-server/main";
+var initModule = 'kitsonkelly-server/main';
 
 // Dojo Configuration
 dojoConfig = {
-	baseUrl: "src/",
+	baseUrl: 'src/',
 	async: 1,
 
 	hasCache: {
-		"host-node": 1,
-		"dom": 0
+		'host-node': 1,
+		'dom': 0
 	},
 
-	packages: [{
-		name: "dojo",
-		location: "dojo"
-	},{
-		name: "dijit",
-		location: "dijit"
-	},{
-		name: "kitsonkelly-server",
-		location: "kitsonkelly-server"
-	},{
-		name: 'setten',
-		location: 'setten'
-	}],
+	packages: [ 'dojo', 'kitsonkelly-server', 'core', 'setten' ],
 
-	deps: [initModule]
+	deps: [ initModule ]
 };
 
 // Load dojo/dojo
-require("./src/dojo/dojo.js");
+require('./src/dojo/dojo.js');

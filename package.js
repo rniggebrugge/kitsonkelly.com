@@ -7,17 +7,18 @@ var profile = (function () {
 		layerOptimize: 'closure',
 		cssOptimize: 'comments',
 		selectorEngine: 'lite',
+		stripConsole: 'all',
 
 		packages: [{
 			name: 'dojo',
-			location: 'dojo'
-		},{
+			location: 'dojo',
+		}, {
 			name: 'dijit',
 			location: 'dijit'
-		},{
+		}, {
 			name: 'core',
-			location: 'core'
-		},{
+			location: 'core',
+		}, {
 			name: 'kitsonkelly-client',
 			location: 'kitsonkelly-client'
 		}],
@@ -34,12 +35,14 @@ var profile = (function () {
 		},
 
 		staticHasFeatures: {
+			'dojo-trace-api': 0,
+			'dojo-publish-privates': 0,
 			'config-dojo-loader-catches': 0,
 			'config-tlmSiblingOfDojo': 0,
 			'dojo-log-api': 0,
 			'dojo-sync-loader': 0,
 			'dojo-timeout-api': 0,
-			'dojo-sniff': 0,
+			'dojo-test-sniff': 0,
 			'dojo-cdn': 0,
 			'config-strip-strict': 0,
 			'dojo-loader-eval-hint-url': 1,
@@ -54,8 +57,8 @@ var profile = (function () {
 		layers: {
 			'dojo/dojo': {
 				include: [ 'dojo/dojo', 'kitsonkelly-client/main', 'core/aspect' ],
-				customBase: 1,
-				boot: 1
+				customBase: true,
+				boot: true
 			}
 		}
 	};

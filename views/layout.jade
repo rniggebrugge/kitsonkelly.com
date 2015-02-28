@@ -14,20 +14,8 @@ html
         dojoConfig = {
           async: 1,
           baseUrl: "#{root}/",
-          packages: [{
-              name: "dojo",
-              location: "dojo"
-            },{
-              name: "dijit",
-              location: "dijit"
-            },{
-              name: 'core',
-              location: 'core'
-            },{
-              name: "kitsonkelly-client",
-              location: "kitsonkelly-client"
-            }],
-          deps: ["kitsonkelly-client/main"]
+          packages: [ 'dojo', 'dijit', 'core', 'kitsonkelly-client' ],
+          deps: [ "kitsonkelly-client/main" ]
         };
       script(type="text/javascript", src='#{root}/dojo/dojo.js')
 

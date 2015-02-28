@@ -1,9 +1,21 @@
 {
   "name": "core",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "devDependencies": {
-    "intern": "git+https://github.com/kitsonk/intern.git#3b5185e"
+    "intern": "^2.2.2",
+    "grunt": "^0.4.5",
+    "http-proxy": "^0.10.4",
+    "glob": "^3.2.11",
+    "jsgi-node": "^0.3.1",
+    "formidable": "^1.0.15",
+    "when": "^3.4.4",
+    "sutabu": "^0.0.3"
   },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "main": "main",
+  "description": "A prototype Dojo 2 library",
   "licenses": [
     {
       "type": "BSD-3-Clause",

@@ -1,8 +1,8 @@
-Build started: Sat May 17 2014 10:30:33 GMT+0100 (BST)
-Build application version: 1.10.0-pre (NaN)
+Build started: Sat Feb 28 2015 14:45:34 GMT+0000 (GMT)
+Build application version: 1.10.4 (37e1249)
 Messages:
 info(103) Optimizing module complete.
-	/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js (compile time:3.235s)
+	/Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js (compile time:2.488s)
 info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dojo/_firebug/firebug.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dojo/resources/dnd.css
@@ -159,9 +159,9 @@ info(106) Optimizing CSS.
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/layout/TabContainer.css
 	file: /Users/kitsonk/github/kitsonkelly.com/src/dijit/themes/tundra/layout/TabContainer_rtl.css
 info(107) Package Version:
-	package: dojo; version: 1.9.3
-	package: dijit; version: 1.9.3
-	package: core; version: 0.0.3
+	package: dojo; version: 1.10.4
+	package: dijit; version: 1.10.4
+	package: core; version: 0.0.5
 	package: kitsonkelly-client; version: 1.0.0
 warn(216) dojo/has plugin resource could not be resolved during build-time.
 	plugin resource id: dom-addeventlistener?:./aspect; reference module id: dojo/on
@@ -175,39 +175,20 @@ warn(224) A plugin dependency was encountered but there was no build-time plugin
 	module: dojo/request/node; plugin: dojo/node
 	module: dojo/request/registry; plugin: dojo/request/default
 	module: dijit/Fieldset; plugin: dojo/query
+	module: dijit/RadioMenuItem; plugin: dojo/query
 	module: dijit/Tree; plugin: dojo/query
-	module: core/Deferred; plugin: core/has
-	module: core/on; plugin: core/has
-	module: core/request; plugin: core/request/default
-	module: core/request/registry; plugin: core/request/default
-error(307) Failed to evaluate module tagged as pure AMD (fell back to processing with regular expressions).
-	module: core/third_party/Promises/polyfill/tests/Promise-tests; error: ReferenceError: doh is not defined
-	module: core/third_party/Promises/polyfill/tests/promises-tests; error: TypeError: Cannot call method 'readFileSync' of undefined
-	module: core/third_party/Promises/polyfill/tests/test; error: TypeError: undefined is not a function
-	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/cli; error: SyntaxError: Unexpected token ILLEGAL
-	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/programmaticRunner; error: ReferenceError: __dirname is not defined
-	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/tests/3.2.1; error: TypeError: Cannot read property 'fulfilled' of undefined
-	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/tests/3.2.2; error: TypeError: Cannot read property 'testFulfilled' of undefined
-	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/tests/3.2.3; error: TypeError: Cannot read property 'testFulfilled' of undefined
-	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/tests/3.2.4; error: TypeError: Cannot read property 'testFulfilled' of undefined
-	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/tests/3.2.5; error: TypeError: Cannot read property 'testFulfilled' of undefined
-	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/tests/3.2.6; error: TypeError: Cannot read property 'testFulfilled' of undefined
-	module: core/third_party/Promises/polyfill/third_party/promises-tests/lib/tests/helpers/testThreeCases; error: TypeError: Cannot read property 'fulfilled' of undefined
+	module: dijit/form/_RadioButtonMixin; plugin: dojo/query
+error(303) Missing include module for layer.
+	missing: core/aspect; layer: dojo/dojo
+error(311) Missing dependency.
+	module: kitsonkelly-client/main; dependency: core/dom
+	module: kitsonkelly-client/main; dependency: core/on
 Layer Contents:
 dojo/dojo:
 	dojo/dojo
 	kitsonkelly-client/main
-	core/dom
-	core/doc
-	core/compose
-	core/lang
-	core/properties
-	core/has
-	core/on
-	core/sniff
 	dojo/domReady
 	dojo/has
-	core/aspect
 
 Optimizer Messages:
 /Users/kitsonk/github/kitsonkelly.com/lib/dojo/dojo.js:
@@ -219,159 +200,155 @@ dojo.js.uncompressed.js:158: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-dojo.js.uncompressed.js:189: WARNING - unreachable code
+dojo.js.uncompressed.js:219: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-dojo.js.uncompressed.js:206: WARNING - unreachable code
+dojo.js.uncompressed.js:236: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-dojo.js.uncompressed.js:544: WARNING - unreachable code
+dojo.js.uncompressed.js:574: WARNING - unreachable code
 					if( 0  && p=="async"){
 					                     ^
 
-dojo.js.uncompressed.js:636: WARNING - unreachable code
-		if( 0  ||  0 ){
-		              ^
+dojo.js.uncompressed.js:695: WARNING - unreachable code
+				if( 0 ){
+				       ^
 
-dojo.js.uncompressed.js:673: WARNING - unreachable code
+dojo.js.uncompressed.js:703: WARNING - unreachable code
 		if( 0 ){
 		       ^
 
-dojo.js.uncompressed.js:688: WARNING - unreachable code
+dojo.js.uncompressed.js:718: WARNING - unreachable code
 		if( 0 ){
 		       ^
 
-dojo.js.uncompressed.js:700: WARNING - unreachable code
+dojo.js.uncompressed.js:730: WARNING - unreachable code
 	}else{
 	     ^
 
-dojo.js.uncompressed.js:716: WARNING - unreachable code
+dojo.js.uncompressed.js:746: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-dojo.js.uncompressed.js:729: WARNING - unreachable code
+dojo.js.uncompressed.js:759: WARNING - unreachable code
 				if( 0  && comboPending && !comboPendingTimer){
 				                                             ^
 
-dojo.js.uncompressed.js:828: WARNING - unreachable code
+dojo.js.uncompressed.js:858: WARNING - unreachable code
 				if( 0 ){
 				       ^
 
-dojo.js.uncompressed.js:833: WARNING - unreachable code
+dojo.js.uncompressed.js:863: WARNING - unreachable code
 				if( 0 ){
 				       ^
 
-dojo.js.uncompressed.js:920: WARNING - unreachable code
+dojo.js.uncompressed.js:950: WARNING - unreachable code
 			if( 0 ){
 			       ^
 
-dojo.js.uncompressed.js:994: WARNING - unreachable code
+dojo.js.uncompressed.js:1024: WARNING - unreachable code
 			}else if( 0 ){
 			             ^
 
-dojo.js.uncompressed.js:1025: WARNING - unreachable code
+dojo.js.uncompressed.js:1055: WARNING - unreachable code
 				if( 0  && legacyMode == sync && !plugin.executed){
 				                                                 ^
 
-dojo.js.uncompressed.js:1097: WARNING - unreachable code
+dojo.js.uncompressed.js:1127: WARNING - unreachable code
 			if( 0 ){
 			       ^
 
-dojo.js.uncompressed.js:1207: WARNING - unreachable code
+dojo.js.uncompressed.js:1237: WARNING - unreachable code
 				if( 0 ){
 				       ^
 
-dojo.js.uncompressed.js:1282: WARNING - unreachable code
+dojo.js.uncompressed.js:1312: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-dojo.js.uncompressed.js:1349: WARNING - unreachable code
+dojo.js.uncompressed.js:1379: WARNING - unreachable code
 				if( 0 ){
 				       ^
 
-dojo.js.uncompressed.js:1382: WARNING - unreachable code
+dojo.js.uncompressed.js:1412: WARNING - unreachable code
 				if( 0 ){
 				       ^
 
-dojo.js.uncompressed.js:1422: WARNING - unreachable code
+dojo.js.uncompressed.js:1452: WARNING - unreachable code
 					if( 0  && legacyMode){
 					                     ^
 
-dojo.js.uncompressed.js:1438: WARNING - unreachable code
+dojo.js.uncompressed.js:1468: WARNING - unreachable code
 				if( 0  && legacyMode){
 				                     ^
 
-dojo.js.uncompressed.js:1523: WARNING - unreachable code
+dojo.js.uncompressed.js:1553: WARNING - unreachable code
 				if( 0  && module.plugin && module.plugin.isCombo){
 				                                                 ^
 
-dojo.js.uncompressed.js:1559: WARNING - unreachable code
+dojo.js.uncompressed.js:1589: WARNING - unreachable code
 				if( 0  && legacyMode && !waiting[mid]){
 				                                      ^
 
-dojo.js.uncompressed.js:1599: WARNING - unreachable code
+dojo.js.uncompressed.js:1629: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-dojo.js.uncompressed.js:1696: WARNING - unreachable code
+dojo.js.uncompressed.js:1726: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-dojo.js.uncompressed.js:1708: WARNING - unreachable code
+dojo.js.uncompressed.js:1738: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
-dojo.js.uncompressed.js:1775: WARNING - unreachable code
+dojo.js.uncompressed.js:1805: WARNING - unreachable code
 		if( 0  && args[1]===defaultDeps){
 		                                ^
 
-dojo.js.uncompressed.js:1809: WARNING - unreachable code
+dojo.js.uncompressed.js:1839: WARNING - unreachable code
 				if( 0  && !targetModule){
 				                        ^
 
-dojo.js.uncompressed.js:1819: WARNING - unreachable code
+dojo.js.uncompressed.js:1849: WARNING - unreachable code
 			if( 0  && isArray(targetModule)){
 			                                ^
-
-dojo.js.uncompressed.js:1837: WARNING - unreachable code
-	if( 0 ){
-	       ^
 
 dojo.js.uncompressed.js:1867: WARNING - unreachable code
 	if( 0 ){
 	       ^
 
 dojo.js.uncompressed.js:1897: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+dojo.js.uncompressed.js:1927: WARNING - unreachable code
 		if( 0 ){
 		       ^
 
-dojo.js.uncompressed.js:1904: WARNING - unreachable code
+dojo.js.uncompressed.js:1934: WARNING - unreachable code
 		if( 0 ){
 		       ^
 
-dojo.js.uncompressed.js:1909: WARNING - unreachable code
+dojo.js.uncompressed.js:1939: WARNING - unreachable code
 	if( 0  && req.combo && req.combo.plugins){
 	                                         ^
 
-dojo.js.uncompressed.js:1923: WARNING - unreachable code
+dojo.js.uncompressed.js:1953: WARNING - unreachable code
 	if(! 1 ){
 	        ^
 
-dojo.js.uncompressed.js:2613: WARNING - unreachable code
-	else {
-	     ^
-
-dojo.js.uncompressed.js:4765: WARNING - unreachable code
+dojo.js.uncompressed.js:2166: WARNING - unreachable code
 	if(! 1 ){
 	        ^
 
-0 error(s), 39 warning(s)
-Done (compile time:3.235s)
+0 error(s), 38 warning(s)
+Done (compile time:2.488s)
 
 
 Process finished normally
-	errors: 12
-	warnings: 15
-	build time: 66.032 seconds
+	errors: 3
+	warnings: 13
+	build time: 66.175 seconds
