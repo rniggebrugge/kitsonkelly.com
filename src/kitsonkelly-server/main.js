@@ -33,7 +33,7 @@ define([
 	app.set('view engine', 'jade');
 	app.set('views', 'views');
 	app.use(compress());
-	app.use(morgan(env === 'production' ? null : 'dev'));
+	app.use(morgan(env === 'production' ? 'combined' : 'dev'));
 	app.use(cookieParser());
 	app.use(cookieSession({ secret: 'yHCoyEPZ9WsNDORGb9SDDMNn0OOMcCgQiW5q8VFhDHJiztvvVVCPkZQWUAXl' }));
 	app.use(favicon('./images/favicon.ico'));
